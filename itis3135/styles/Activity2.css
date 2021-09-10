@@ -41,8 +41,10 @@ tbody tr:nth-child(odd) td
 
 tbody tr:nth-child(even) td
 {
-	background-color:rgb(81, 99, 1);
+	background-color:rgb(74, 105, 1);
+	color:white;
 }
+
 h1, h2, h3
 {
 	font-family: Cambria, Cochin, Georgia, serif;

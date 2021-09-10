@@ -17,6 +17,7 @@
     </nav>
 
     <main>
+        <br>
         <h2>Activity #2 - HTML Tables</h2>
         <h3>Employee Tabular Data</h3>
         <ol>
@@ -84,16 +85,16 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Position</th>
-                        <th>Name</th>
-                        <th>E-mail</th>
-                        <th class="right">Years of Service</th>
-                        <th class="right">Monthly Salary</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail</th>
+                        <th class="right" scope="col">Years of Service</th>
+                        <th class="right" scope="col">Monthly Salary</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th rowspan="3">Sales</th>
+                        <th rowspan="3" scope="row">Sales</th>
                         <td>David Lee</td>
                         <td>DLee@aol.com</td>
                         <td class="right">3</td>
@@ -112,7 +113,7 @@
                         <td class="right">6,000</td>
                     </tr>
                     <tr>
-                        <th rowspan="2">Marketing</th>
+                        <th rowspan="2" scope="row">Marketing</th>
                         <td>Cody Egg</td>
                         <td>codeman@gmail.com</td>
                         <td class="right">5</td>
@@ -125,7 +126,7 @@
                         <td class="right">5,399</td>
                     </tr>
                     <tr>
-                        <th rowspan="2">Designer</th>
+                        <th rowspan="2" scope="row">Designer</th>
                         <td>Ben Zasama</td>
                         <td>theZas@yahoo.com</td>
                         <td class="right">3</td>
@@ -138,7 +139,7 @@
                         <td class="right">6,980</td>
                     </tr>
                     <tr>
-                        <th colspan="3">Total Years of Service</th>
+                        <th colspan="3" scope="row">Total Years of Service</th>
                         <td>34</td>
                         <td>44,679</td>
                     </tr>
