@@ -46,3 +46,35 @@ nav
 {
 	text-align: center;
 }
+
+input[type='radio']:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #ffffff;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+	width: 10px;
+	height: 10px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #190f70;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.div-button {
+	background-color: #18a1e0;
+}
