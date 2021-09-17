@@ -1,5 +1,4 @@
-body
-{
+body {
 	font-family: tahoma;
 	color: #DDDDDD ;
 	background-color: #001f3f;
@@ -7,43 +6,41 @@ body
 	margin-right: 75px;
 }
 
-header, footer
-{
+header, footer {
 	text-align: center;
 }
 
-h1, h2, h3
-{
+h1, h2, h3 {
 	font-family: Cambria, Cochin, Georgia, serif;
 	text-align: center;
 	line-height: 0px;
 }
 
-a
-{
+a {
 	text-decoration: none;
 	color: lightseagreen;
 	font-weight: bold;
 }
 
-a:hover
-{
+a:hover {
 	text-decoration: underline;
 	color: mediumseagreen;
 }
 
-figure
-{
+a:visited {
+	text-decoration: none;
+	color:ghostwhite;
+}
+
+figure {
 	text-align: center;
 }
 
-figcaption
-{
+figcaption {
 	font-style: italic;
 }
 
-nav
-{
+nav {
 	text-align: center;
 }
 
@@ -77,4 +74,7 @@ input[type='radio']:checked:after {
 
 .div-button {
 	background-color: #18a1e0;
+	font-style: italic;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
