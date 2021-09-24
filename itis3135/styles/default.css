@@ -6,7 +6,13 @@ body {
 	margin-right: 75px;
 }
 
+main {
+	margin-top: 75px;
+}
+
 header, footer {
+	margin-top: 10px;
+	margin-bottom:10px;
 	text-align: center;
 }
 
@@ -78,3 +84,6 @@ input[type='radio']:checked:after {
 	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.scriptButton {
+	font-weight: bold;
+}
