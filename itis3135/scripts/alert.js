@@ -12,6 +12,11 @@ document.getElementById("dateTime").innerHTML= dateTimeString;
 var welcomeString = "Hi " + userName +". Glad to see hear you are " + userStatus +". Welcome to Jumpy Kangaroo Inc!";
 document.getElementById("welcome").innerHTML= welcomeString;
 
+
+function scriptAlert() {
+    window.alert("Hey my script is running");
+}
+
 function letsHop() {
     for(var i = 0; i < 5; i++) {
         window.alert("HOP " + (i+1));
