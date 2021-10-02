@@ -41,9 +41,10 @@ keys.addEventListener('click', e => {
         }
         if (action === 'calculate') {
             console.log('equal key');
+            const secondValue = displayedNum;
             const firstValue = calculator.dataset.firstValue;
             const operator = calculator.dataset.operator;
-            const secondValue = displayedNum;
+            
 
             display.textContent = calculate(firstValue, operator, secondValue);
         }
