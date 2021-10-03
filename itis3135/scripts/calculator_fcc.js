@@ -9,8 +9,10 @@ keys.addEventListener('click', e => {
         const action = key.dataset.action;
         const keyContent = key.textContent;
         const displayedNum = display.textContent;
-        const previousKeyType = calculator.dataset.previousKeyType
+        const previousKeyType = calculator.dataset.previousKeyType;
+        
         Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'));
+        
         if (!action) {
             console.log('number key!');
             if (displayedNum === '0' || previousKeyType === 'operator') {
