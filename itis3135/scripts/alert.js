@@ -5,10 +5,8 @@ var userStatus = window.prompt("How are you doing today?");
 //print today's date
 var today = new Date().toLocaleString();
 var dateTimeString= "Today is " + today;
-//document.getElementById("dateTime").innerHTML= dateTimeString;
+document.getElementById("dateTime").innerHTML= dateTimeString;
 
-var newStringDateTime = document.getElementById("dateTime");
-newStringDateTime.innerHTML = dateTimeString;
 
 
 //print username & status
@@ -16,35 +14,43 @@ var welcomeString = "Hi " + userName +". Glad to see hear you are " + userStatus
 document.getElementById("welcome").innerHTML= welcomeString;
 
 
-function scriptAlert() {
+function scriptAlert() 
+{
     window.alert("Hey my script is running");
 }
 
-function letsHop() {
-    for(var i = 0; i < 5; i++) {
+function letsHop() 
+{
+    for(var i = 0; i < 5; i++) 
+    {
         window.alert("HOP " + (i+1));
     }
-    window.alert("Good job! Rest up, " + userName + ". You know you'll want to do that again!")
+    window.alert("Good job! Rest up, " + userName + ". You know you'll want to do that again!");
 }
 
-function letsGame() {
+function letsGame() 
+{
     var myNumber = Math.floor(Math.random()*(5-1) + 1);
     var guess = window.prompt("Guess my number to win: (1-5)");
-    if (guess == myNumber) {
+    if (guess == myNumber) 
+    {
         window.alert("YOU WIN!");
     }
-    else {
+    else 
+    {
         window.alert("Nice try, " + userName + ". You guessed "+ guess + ", but my number was " + myNumber);
     }
 
 }
 
-function suggest() {
+function suggest() 
+{
     var newText = "Check out our forms to give us some input. We'd really appreciate the help, " + userName + "! :D";
     document.getElementById("newText").innerHTML=newText;
 }
 
-function kangMath() {
+function kangMath() 
+{
     //generate random numbers
     var kangMath_random = Math.floor(Math.random()*(100-1)+1);
     var kangMath_random2 = Math.floor(Math.random()*(kangMath_random-1)+1);
@@ -53,15 +59,18 @@ function kangMath() {
     //calculate difference
     var kangMath_solution = kangMath_random-kangMath_input;
     //if else statement for the answer
-    if (kangMath_random-kangMath_random2-kangMath_input == 0) {
+    if (kangMath_random-kangMath_random2-kangMath_input == 0) 
+    {
         window.alert("That is correct! Thats a big pouch!");
     }
-    else {
+    else 
+    {
         window.alert("Not quite. There would be " + (kangMath_random-kangMath_input) + " more kangaroos to put in the pouch")
     }
 }
 
-function areaPerimeter() {
+function areaPerimeter() 
+{
     //prompt for length and width
     var lengthInput = window.prompt("We want to create rectangular hopping zone for our favorite kangaroo. How big should the length be?");
     var widthInput = window.prompt("How wide should the zone be?")

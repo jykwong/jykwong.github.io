@@ -8,18 +8,17 @@ function addSalary()
     let employeeIndex = 0; //variable to find employee name index
 
     if  (employeeName == "") {
-        window.alert("Select an employee from the list");
+        window.alert("Select an employee from the list"); //alerts if name not selected
     }
     if (employeeSalary <= 0 || isNaN(employeeSalary)) {
-        window.alert("Enter a valid salary");
+        window.alert("Enter a valid salary"); //alerts if salary is 0 or not a number
     }
-    employeeIndex = person.indexOf(employeeName);
-    salary[employeeIndex] = employeeSalary;
-    console.log("index " + employeeIndex);
-    console.log("salary " + employeeSalary);
-    console.log(employeeName)
-
-    console.log("testing salary array at index " + employeeIndex + " " + salary[employeeIndex])
+    employeeIndex = person.indexOf(employeeName); //gets the index of named employee
+    salary[employeeIndex] = employeeSalary; //assigns salary input to salary array at employee's index
+    console.log("index " + employeeIndex); //testing variable
+    console.log("salary " + employeeSalary); //testing variable
+    console.log(employeeName); //testing variable
+    console.log("testing salary array at index " + employeeIndex + " " + salary[employeeIndex]); //testing variable
 
 }
 
@@ -30,7 +29,7 @@ function displayResults()
     let avgSalary = 0; //variable declaration
     for (var i = 0; i < salary.length; i++) //for loop to add all salaries
     {
-        sum += parseInt(salary[i]); //parseInt was necessary to get the average calculation to work properly
+        sum += parseInt(salary[i]); //parseInt was used to get the average calculation to work properly
     }
     avgSalary = sum / salary.length; //calculate average
     console.log(sum); //console print for testing purposes
