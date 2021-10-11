@@ -5,7 +5,10 @@ var userStatus = window.prompt("How are you doing today?");
 //print today's date
 var today = new Date().toLocaleString();
 var dateTimeString= "Today is " + today;
-document.getElementById("dateTime").innerHTML= dateTimeString;
+//document.getElementById("dateTime").innerHTML= dateTimeString;
+
+var newStringDateTime = document.getElementById("dateTime");
+newStringDateTime.innerHTML = dateTimeString;
 
 
 //print username & status
