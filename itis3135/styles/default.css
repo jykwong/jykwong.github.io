@@ -180,3 +180,8 @@ tbody tr:nth-child(even) td
 	background-color:rgb(74, 105, 1);
 	color:rgb(202, 199, 199);
 }
+
+.left
+{
+	text-align:left;
+}
