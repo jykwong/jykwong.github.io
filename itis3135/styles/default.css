@@ -181,7 +181,47 @@ tbody tr:nth-child(even) td
 	color:rgb(202, 199, 199);
 }
 
-.left
+.slider-container
 {
-	text-align:left;
+	width: 645px;
+	margin: 40px auto;
+	overflow:auto;
 }
+
+.slider
+{
+	width: 641px;
+	height: 428px;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	z-index: 1;
+}
+
+.slider img
+{
+	display: none;
+	width: 641px;
+	height: 428px;
+}
+
+.slider img.active
+{
+	display: inline-block;
+}
+
+
+.prev,.next,.autoplay
+{
+	font-family: 'tacoma';
+	background-color: green;
+	color: white;
+	padding: 15px, 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 25px;
+	cursor: pointer;
+	margin: 4px 2px;
+	width: 100px;
+}
+
