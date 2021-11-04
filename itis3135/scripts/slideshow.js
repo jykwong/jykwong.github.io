@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     //preload images
-    var pics =[
+    var pics =
+    [
         ["images/kangaroo2-pixabay-com.jpg"],
         ["images/kangaroo3-pixabay-com.jpg"],
         ["images/kangaroo4-pixabay-com.jpg"],
@@ -11,18 +12,21 @@ $(document).ready(function() {
     ]
     count = pics.length;
     var $imgs = new Array();
-    for(var i=0; i<count-1; i++) {
+    for(var i=0; i<count-1; i++) 
+    {
         var $image = $("<img>").attr("src", pics[i]);
         $imgs.push($('<img>').attr('src', pics[i]))
     }
 
     //event handler next image
-    $('.next').on('click', function() {
+    $('.next').on('click', function() 
+    {
         console.log('clicked: next');
         var currentImg = $('.active');
         var nextImg = currentImg.next();
 
-        if(nextImg.length) {
+        if(nextImg.length) 
+        {
             currentImg.removeClass('active').css('z-index', -5);
             nextImg.addClass('active').css('z-index', 5);
         }
@@ -33,12 +37,14 @@ $(document).ready(function() {
     });
 
     //event handler prev image
-    $('.prev').on('click', function() {
+    $('.prev').on('click', function() 
+    {
         console.log('clicked: prev');
         var currentImg = $('.active');
         var prevImg = currentImg.prev();
 
-        if(prevImg.length) {
+        if(prevImg.length) 
+        {
             currentImg.removeClass('active').css('z-index', -5);
             prevImg.addClass('active').css('z-index', 5);
         }
@@ -51,12 +57,14 @@ $(document).ready(function() {
 
     //autoplay
 
-    $('.autoplay').on('click', function() {
+    $('.autoplay').on('click', function() 
+    {
         setInterval(function(){
             var currentImg = $('.active');
             var nextImg = currentImg.next();
 
-            if(nextImg.length) {
+            if(nextImg.length) 
+            {
                 currentImg.removeClass('active').css('z-index', -5);
                 nextImg.addClass('active').css('z-index', 5);
             }
@@ -65,7 +73,6 @@ $(document).ready(function() {
                 $('.slider img').first().addClass('active');
             }
         }, 2500);
-        clearInterval();
     })
         
 })
