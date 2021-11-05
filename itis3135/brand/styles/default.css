@@ -9,6 +9,7 @@ body {
 header, footer {
     background-color: #006C67;
     text-align: center;
+    padding:1em;
 }
 nav {
     position:relative;
