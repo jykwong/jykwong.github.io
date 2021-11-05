@@ -8,7 +8,7 @@ function submit_data() {
     let comments = document.getElementById("suggestions").value;
     console.log(comments);
 
-    var display = document.getElementById("data");
+    let display = document.getElementById("data");
     display.innerHTML = ("<p>" + name + "</p>");
     display.innerHTML += ("<p>" + email + "</p>");
     display.innerHTML += ("<p>" + phone + "</p>");
