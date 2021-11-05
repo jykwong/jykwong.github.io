@@ -16,6 +16,14 @@ h1, h2{
     text-align: center;
     line-height: 0px;
 }
+a {
+    text-decoration: none;
+	color: rgb(197, 6, 54);
+	font-weight: bold;
+}
+a:visited {
+    color:thistle;
+}
 
 .h3-margin {
     margin-left: 100px;
@@ -71,3 +79,36 @@ input{
     background: #f1f1f1c4;
 }
 
+.imgSize {
+    width: 400px;
+    height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25.6% 70%;
+    margin-left: 100px;
+    margin-right:100px;
+    grid-gap: 1em;
+}
+.grid > div {
+    border: solid black 1px;
+    background-color: hsla(0, 0%, 0%, 0.315);
+    padding: 1em;
+}
+.grid > div:nth-child(odd) {
+    border: solid black 1px;
+    background-color: hsla(0, 0%, 0%, 0.315);
+    padding:1em;
+}
+
+.vButton {
+    background-color: gray;
+    color: black;
+    font-size:20px;
+    padding: 1em;
+    border-radius: 12px;
+}
+.vButton:hover {
+    background-color: yellow;
+}
