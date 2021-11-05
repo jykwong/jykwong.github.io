@@ -24,7 +24,262 @@
 
     <main>
         <br>
-        <h2>Order</h2>
+        <h2>Order Page</h2>
+        <div class="container">
+            <div class="order_grid">
+                <form id="order_form" name="order_form" action="#" style="margin-left: 1em; margin-top: 1em; margin-bottom: 1em; margin-right: 1em">
+                    <div>
+                        <label for="fname" style="font-weight: bold;">Name:</label>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your name"><br>
+
+                        <label for="phone" style="font-weight:bold;">Phone:</label>
+                        <input name="phone" type="tel" id="phone" size="20" minlength="7" maxlength="10" placeholder="123-456-7890"><br>
+
+                        <label for="email" style="font-weight: bold;">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+                    </div>
+                    <div>
+                        <label for="instructions" style="font-weight:bold;">Instructions</label>
+                        <textarea id="instructions" name="instructions" rows="5" cols="40">If there are any custom instructions that you want for your order (e.g. allergies), please let us know here.
+                        </textarea>
+                    </div>
+                    <input type="submit"style="font-weight:bold; font-size: large;" value="Place Order">
+                </form>
+
+                <div>
+                    <h4>Order Details</h4>
+                    <div id="order_details_items_ordered">
+                        <h4>Items in Order:</h4>
+                    </div>
+                    <div id="order_details_items_bought">
+                        some item we buy
+                    </div>
+                    <h4>Order Cost:</h4>
+                    <div id="order_cost">
+                        $
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h3order">Appetizers</h3>
+        <div class="container">
+            <div class="order_grid">
+                <div>
+                    Shrimp Spring Roll
+                </div>
+                <div>
+                    Pork Pot Sticker
+                </div>
+                <div>
+                    6pc Chicken Wing
+                </div>
+                <div>
+                    Crab Rangoon
+                </div>
+                <div>
+                    Edamame
+                </div>
+                <div>
+                    Harcau Shrimp Dumplings
+                </div>
+                <div>
+                    Vegetable Tempura
+                </div>
+                <div>
+                    Salt & Pepper Calamari
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h3order">Hibachi</h3>
+        <div class="container">
+            <div class="order_grid">
+                <div>
+                    Filet Mignon
+                </div>
+                <div>
+                    Steak
+                </div>
+                <div>
+                    Ribeye
+                </div>
+                <div>
+                    Chicken
+                </div>
+                <div>
+                    Small Shrimp
+                </div>
+                <div>
+                    Jumbo Shrimp
+                </div>
+                <div>
+                    Lobster
+                </div>
+                <div>
+                    Vegetable Dinner
+                </div>
+                <div>
+                    Steak & Chicken
+                </div>
+                <div>
+                    Steak & Jumbo Shrimp
+                </div>
+                <div>
+                    Steak & Small Shrimp
+                </div>
+                <div>
+                    Steak & Lobster
+                </div>
+                <div>
+                    Ribeye & Chicken
+                </div>
+                <div>
+                    Ribeye & Small Shrimp
+                </div>
+                <div>
+                    Ribeye & Jumbo Shrimp
+                </div>
+                <div>
+                    Ribeye & Lobster
+                </div>
+                <div>
+                    Filet & Chicken
+                </div>
+                <div>
+                    Filet & Small Shrimp
+                </div>
+                <div>
+                    Filet & Jumbo Shrimp
+                </div>
+                <div>
+                    Filet & Lobster
+                </div>
+                <div>
+                    Chicken & Jumbo Shrimp
+                </div>
+                <div>
+                    Chicken & Small Shrimp
+                </div>
+                <div>
+                    Chicken & Lobster
+                </div>
+                <div>
+                    Lobster & Jumbo Shrimp
+                </div>
+                <div>
+                    Lobster & Small Shrimp
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h3order">Noodles</h3>
+        <div class="container">
+            <div class="order_grid">
+                <div>
+                    Japanese Tempura Udon Bowl 
+                </div>
+                <div>
+                    Seafood Udon Bowl
+                </div>
+                <div>
+                    Hong Kong Wonton Egg Noodle Bowl
+                </div>
+                <div>
+                    Vietnamese Beef Rice Noodle Broth(Pho)
+                </div>
+                <div>
+                    Chicken Mushroom Soba Noodle Bowl
+                </div>
+                <div>
+                    Seafood Curry Egg Noodle Bowl 
+                </div>
+                <div>
+                    Tum Yum Seafood Mei Fun Bowl
+                </div>
+                <div>
+                    Miso Ginger Pork Ramen Bowl
+                </div>
+                <div>
+                    Pad See Yew(Thai)
+                </div>
+                <div>
+                    Hong Kong Chow Fun
+                </div>
+                <div>
+                    Curry Chow Mei Fun
+                </div>
+                <div>
+                    Chinese Lo Mein
+                </div>
+                <div>
+                    Stir Fry Udon
+                </div>
+                <div>
+                    Double Pan Fried Egg Noodles
+                </div>
+                <div>
+                    Stir Fried Yaki Ramen
+                </div>
+                <div>
+                    Buckwheat Yaki Soba
+                </div>
+            </div>
+        </div>
+
+        <h3 class="h3order">Sushi</h3>
+        <div class="container">
+            <div class="order_grid">
+                <div>
+                    California Roll
+                </div>
+                <div>
+                    Philidelphia Roll
+                </div>
+                <div>
+                    Dragon Roll
+                </div>
+                <div>
+                    Rainbow Roll
+                </div>
+                <div>
+                    American Dream
+                </div>
+                <div>
+                    Crab Rangoon Roll
+                </div>
+                <div>
+                    Unagi Roll
+                </div>
+                <div>
+                    Tuna Roll
+                </div>
+                <div>
+                    Spicy Tuna Roll
+                </div>
+                <div>
+                    Salmon Roll
+                </div>
+                <div>
+                    Spicy Salmon Roll
+                </div>
+                <div>
+                    Spicy Shrimp Roll
+                </div>
+                <div>
+                    Crispy California Roll
+                </div>
+                <div>
+                    Trust Me Roll
+                </div>
+                <div>
+                    White Tuna Roll
+                </div>
+                <div>
+                    Spicy White Tuna Roll
+                </div>
+            </div>
+        </div>
         
         
     </main>

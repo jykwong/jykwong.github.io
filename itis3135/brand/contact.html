@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title> Jumpy Kangaroo Inc. | Contact</title>
     <link href="styles/default.css" rel="stylesheet" type="text/css">
+    <script src="scripts/brand.js"></script>
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
 </head>
 
@@ -15,6 +16,62 @@
     <main>
         <br>
         <h2>Contact</h2>
+        <div class="divMargin">
+            <div>
+                <form id="your_details" name="your_details" action="#" >
+                    <div>
+                        <label for="fname" style="font-weight: bold;">Name</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="email" style="font-weight: bold;">Email</label><br>
+                        <input type="text" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label for="phone" style="font-weight:bold;">Phone</label><br>
+                        <input name="phone" type="tel" id="phone" size="20" minlength="7" maxlength="10" placeholder="123-456-7890">
+                    </div>
+                    <br>
+                    <h3>Sign up for our newsletter!</h3>
+                    <div>
+                        <label for="email_newsletter">E-mail</label>
+                        <input type="checkbox" name="email" id="email_newsletter">
+                    </div>
+                    <div>
+                        <label for="website">Website</label>
+                        <input type="checkbox" name="website" id="website">
+                    </div>
+                    <div>
+                        <label for="text">Text Message</label>
+                        <input type="checkbox" name="text" id="text">
+                    </div>
+                    <div>
+                        <label for="social">Social Media</label>
+                        <input type="checkbox" name="social" id="social">
+                    </div>
+                    <br>
+                    <h3>Are you interested in our work?</h3>
+                    <div>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="interest" id="yes">
+                    </div>
+                    <div>
+                        <label for="no">No</label>
+                        <input type="radio" name="interest" id="no">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="suggestions">Comment & Suggestions</label><br>
+                        <textarea id="suggestions" name="suggestions" rows="5" cols="40"></textarea>
+                    </div>
+                    
+                    <input type="submit"style="font-weight:bold; font-size: large;" value="Submit" onclick="submit_data()">
+                </form>
+            </div>
+            <div id="data">
+
+            </div>
+        </div>
         
         <div class= "divMargin">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1795.9851720870515!2d-79.41965310421787!3d35.14929250724321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8854b4fc225d5d0f%3A0x83f5c8293976f719!2s1379%20N%20Sandhills%20Blvd%2C%20Aberdeen%2C%20NC%2028315!5e0!3m2!1sen!2sus!4v1631903873046!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

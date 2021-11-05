@@ -61,3 +61,12 @@ tbody tr:nth-child(odd) {
 .imgFlip {
     transform: scaleX(-1);
 }
+
+input{
+    padding: 15px;
+    margin: 15px 0 15px 0;
+    display: inline-block;
+    border: solid;
+    border-color: black;
+    background: #f1f1f1c4;
+}

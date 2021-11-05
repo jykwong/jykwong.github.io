@@ -9,12 +9,11 @@ body {
 	margin-top: 30px;
 	margin-left: 75px;
 	margin-right: 75px;
-    background: linear-gradient(to bottom, hsla(0, 0%, 0%, 0.808) 20%,
-              hsla(0, 0%, 100%, 0.185)), url(../images/noodle_background.jpg)no-repeat, url(../images/noodle_background2.jpg),linear-gradient(to bottom, hsla(0, 0%, 0%, 0.808) 20%,
-              hsla(0, 0%, 100%, 0.185));
+    background: linear-gradient(hsl(0, 0%, 0%),
+              hsla(0, 0%, 0%, 0.404),hsl(0, 0%, 0%)), url(../images/noodle_background.jpg)no-repeat, url(../images/noodle_background2.jpg);
     background-size:cover;
 }
-h1, h2{
+h1, h2, h3{
     font-family: "Playball";
     color: white;
     text-shadow: #000 5px 5px 10px;
@@ -28,6 +27,11 @@ h3 {
     color:black;
     font-family: "Playball";
     text-shadow: #000 3px 3px 5px;
+}
+h3.h3order {
+    font-family: "Playball";
+    color: white;
+    text-shadow: #000 5px 5px 10px;
 }
 p {
     text-align: center;
@@ -106,3 +110,88 @@ header, footer {
     transform: translate(-50%, -50%);
     text-shadow: #000 5px 5px 10px;
 }
+
+.container {
+    border-radius: 15px;
+	box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.2);
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: auto;
+	max-width: 40em;
+	overflow:hidden;
+}
+.order_grid {
+    display: grid;
+    background-color: hsla(0, 0%, 83%, 0.452);
+    grid-template-columns:50% 50%;
+    grid-auto-columns: minmax(100px, auto);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: .5em;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.order_grid > div {
+    font-size:larger;
+    text-align: center;
+    background-color:hsla(0, 0%, 83%, 0.452);
+    padding:1em;
+    border-radius: 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.order_grid > div:nth-child(odd) {
+    text-align: center;
+    background-color:hsla(0, 0%, 83%, 0.452);
+    padding:1em;
+    border-radius: 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.slider-container
+{
+	width: 645px;
+	margin: 40px auto;
+	overflow:auto;
+}
+
+.slider
+{
+	width: 641px;
+	height: auto;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	z-index: 1;
+}
+
+.slider img
+{
+	display: none;
+	width: 641px;
+	height: auto;
+}
+
+.slider img.active
+{
+	display: inline-block;
+}
+
+
+.prev,.next,.autoplay
+{
+	font-family: 'tacoma';
+	background-color: rgb(128, 4, 0);
+	color: white;
+	padding: 15px, 30px;
+	text-align: center;
+	display: inline-block;
+	font-size: 45px;
+	cursor: pointer;
+	margin: 4px 2px;
+	width: 100px;
+    border-radius: 25px;
+
+}
+
