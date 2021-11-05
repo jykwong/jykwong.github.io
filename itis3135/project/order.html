@@ -25,8 +25,8 @@
     <main>
         <br>
         <h2>Order Page</h2>
-        <div class="container">
-            <div class="order_grid">
+        <div class="container"> <!--Container for customer info form-->
+            <div class="order_grid"> <!--Enter customer info-->
                 <form id="order_form" name="order_form" action="#" style="margin-left: 1em; margin-top: 1em; margin-bottom: 1em; margin-right: 1em">
                     <div>
                         <label for="fname" style="font-weight: bold;">Name:</label>
@@ -45,7 +45,7 @@
                     <input type="submit"style="font-weight:bold; font-size: large;" value="Place Order">
                 </form>
 
-                <div>
+                <div> <!--javascript needed to manipulate divs below based on customer's selection-->
                     <h4>Order Details</h4>
                     <div id="order_details_items_ordered">
                         <h4>Items in Order:</h4>
@@ -63,222 +63,98 @@
 
         <h3 class="h3order">Appetizers</h3>
         <div class="container">
-            <div class="order_grid">
-                <div>
-                    Shrimp Spring Roll
-                </div>
-                <div>
-                    Pork Pot Sticker
-                </div>
-                <div>
-                    6pc Chicken Wing
-                </div>
-                <div>
-                    Crab Rangoon
-                </div>
-                <div>
-                    Edamame
-                </div>
-                <div>
-                    Harcau Shrimp Dumplings
-                </div>
-                <div>
-                    Vegetable Tempura
-                </div>
-                <div>
-                    Salt & Pepper Calamari
-                </div>
+            <div class="order_grid"> 
+                <!-- Buttons for appetizer selection -->
+                <button class="order_button"onclick="menu_click()">Shrimp Spring Roll</button>
+                <button class="order_button"onclick="menu_click()">Pork Pot Sticker</button>
+                <button class="order_button"onclick="menu_click()">6pc Chicken Wing</button>
+                <button class="order_button"onclick="menu_click()">Crab Rangoon</button>
+                <button class="order_button"onclick="menu_click()">Edamame</button>
+                <button class="order_button"onclick="menu_click()">Harcau Shrimp Dumplings</button>
+                <button class="order_button"onclick="menu_click()">Vegetable Tempura</button>
+                <button class="order_button"onclick="menu_click()">Salt & Pepper Calamari</button>
             </div>
         </div>
 
         <h3 class="h3order">Hibachi</h3>
         <div class="container">
             <div class="order_grid">
-                <div>
-                    Filet Mignon
-                </div>
-                <div>
-                    Steak
-                </div>
-                <div>
-                    Ribeye
-                </div>
-                <div>
-                    Chicken
-                </div>
-                <div>
-                    Small Shrimp
-                </div>
-                <div>
-                    Jumbo Shrimp
-                </div>
-                <div>
-                    Lobster
-                </div>
-                <div>
-                    Vegetable Dinner
-                </div>
-                <div>
-                    Steak & Chicken
-                </div>
-                <div>
-                    Steak & Jumbo Shrimp
-                </div>
-                <div>
-                    Steak & Small Shrimp
-                </div>
-                <div>
-                    Steak & Lobster
-                </div>
-                <div>
-                    Ribeye & Chicken
-                </div>
-                <div>
-                    Ribeye & Small Shrimp
-                </div>
-                <div>
-                    Ribeye & Jumbo Shrimp
-                </div>
-                <div>
-                    Ribeye & Lobster
-                </div>
-                <div>
-                    Filet & Chicken
-                </div>
-                <div>
-                    Filet & Small Shrimp
-                </div>
-                <div>
-                    Filet & Jumbo Shrimp
-                </div>
-                <div>
-                    Filet & Lobster
-                </div>
-                <div>
-                    Chicken & Jumbo Shrimp
-                </div>
-                <div>
-                    Chicken & Small Shrimp
-                </div>
-                <div>
-                    Chicken & Lobster
-                </div>
-                <div>
-                    Lobster & Jumbo Shrimp
-                </div>
-                <div>
-                    Lobster & Small Shrimp
-                </div>
+                <!-- Buttons for hibachi selection -->
+                <button class="order_button"onclick="menu_click()">Filet Mignon</button>
+                <button class="order_button"onclick="menu_click()">Steak</button>
+                <button class="order_button"onclick="menu_click()">Steak</button>
+                <button class="order_button"onclick="menu_click()">Ribeye</button>
+                <button class="order_button"onclick="menu_click()">Chicken</button>
+                <button class="order_button"onclick="menu_click()">Small Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Lobster</button>
+                <button class="order_button"onclick="menu_click()">Vegetable Dinner</button>
+                <button class="order_button"onclick="menu_click()">Steak & Chicken</button>
+                <button class="order_button"onclick="menu_click()">Steak & Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Steak & Small Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Steak & Lobster</button>
+                <button class="order_button"onclick="menu_click()">Ribeye & Chicken</button>
+                <button class="order_button"onclick="menu_click()">Ribeye & Small Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Ribeye & Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Ribeye & Lobster</button>
+                <button class="order_button"onclick="menu_click()">Filet & Chicken</button>
+                <button class="order_button"onclick="menu_click()">Filet & Small Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Filet & Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Filet & Lobster</button>
+                <button class="order_button"onclick="menu_click()">Chicken & Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Chicken & Small Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Chicken & Lobster</button>
+                <button class="order_button"onclick="menu_click()">Lobster & Jumbo Shrimp</button>
+                <button class="order_button"onclick="menu_click()">Lobster & Small Shrimp</button>
             </div>
         </div>
 
         <h3 class="h3order">Noodles</h3>
         <div class="container">
             <div class="order_grid">
-                <div>
-                    Japanese Tempura Udon Bowl 
-                </div>
-                <div>
-                    Seafood Udon Bowl
-                </div>
-                <div>
-                    Hong Kong Wonton Egg Noodle Bowl
-                </div>
-                <div>
-                    Vietnamese Beef Rice Noodle Broth(Pho)
-                </div>
-                <div>
-                    Chicken Mushroom Soba Noodle Bowl
-                </div>
-                <div>
-                    Seafood Curry Egg Noodle Bowl 
-                </div>
-                <div>
-                    Tum Yum Seafood Mei Fun Bowl
-                </div>
-                <div>
-                    Miso Ginger Pork Ramen Bowl
-                </div>
-                <div>
-                    Pad See Yew(Thai)
-                </div>
-                <div>
-                    Hong Kong Chow Fun
-                </div>
-                <div>
-                    Curry Chow Mei Fun
-                </div>
-                <div>
-                    Chinese Lo Mein
-                </div>
-                <div>
-                    Stir Fry Udon
-                </div>
-                <div>
-                    Double Pan Fried Egg Noodles
-                </div>
-                <div>
-                    Stir Fried Yaki Ramen
-                </div>
-                <div>
-                    Buckwheat Yaki Soba
-                </div>
+                <!-- Buttons for noodle selection -->
+                <button class="order_button"onclick="menu_click()">Japanese Tempura Udon Bowl</button>
+                <button class="order_button"onclick="menu_click()">Seafood Udon Bowl</button>
+                <button class="order_button"onclick="menu_click()">Hong Kong Wonton Egg Noodle Bowl</button>
+                <button class="order_button"onclick="menu_click()">Vietnamese Beef Rice Noodle Broth(Pho)</button>
+                <button class="order_button"onclick="menu_click()">Chicken Mushroom Soba Noodle Bowl</button>
+                <button class="order_button"onclick="menu_click()">Seafood Curry Egg Noodle Bowl </button>
+                <button class="order_button"onclick="menu_click()">Tum Yum Seafood Mei Fun Bowl</button>
+                <button class="order_button"onclick="menu_click()">Miso Ginger Pork Ramen Bowl</button>
+                <button class="order_button"onclick="menu_click()">Pad See Yew(Thai)</button>
+                <button class="order_button"onclick="menu_click()">Hong Kong Chow Fun</button>
+                <button class="order_button"onclick="menu_click()">Curry Chow Mei Fun</button>
+                <button class="order_button"onclick="menu_click()">Chinese Lo Mein</button>
+                <button class="order_button"onclick="menu_click()">Stir Fry Udon</button>
+                <button class="order_button"onclick="menu_click()">Double Pan Fried Egg Noodles</button>
+                <button class="order_button"onclick="menu_click()">Stir Fried Yaki Ramen</button>
+                <button class="order_button"onclick="menu_click()">Buckwheat Yaki Soba</button>
             </div>
         </div>
 
         <h3 class="h3order">Sushi</h3>
         <div class="container">
             <div class="order_grid">
-                <div>
-                    California Roll
-                </div>
-                <div>
-                    Philidelphia Roll
-                </div>
-                <div>
-                    Dragon Roll
-                </div>
-                <div>
-                    Rainbow Roll
-                </div>
-                <div>
-                    American Dream
-                </div>
-                <div>
-                    Crab Rangoon Roll
-                </div>
-                <div>
-                    Unagi Roll
-                </div>
-                <div>
-                    Tuna Roll
-                </div>
-                <div>
-                    Spicy Tuna Roll
-                </div>
-                <div>
-                    Salmon Roll
-                </div>
-                <div>
-                    Spicy Salmon Roll
-                </div>
-                <div>
-                    Spicy Shrimp Roll
-                </div>
-                <div>
-                    Crispy California Roll
-                </div>
-                <div>
-                    Trust Me Roll
-                </div>
-                <div>
-                    White Tuna Roll
-                </div>
-                <div>
-                    Spicy White Tuna Roll
-                </div>
+                <!-- Buttons for sushi selection -->
+                <button class="order_button"onclick="menu_click()">California Roll</button>
+                <button class="order_button"onclick="menu_click()">Philadelphia Roll</button>
+                <button class="order_button"onclick="menu_click()">Dragon Roll</button>
+                <button class="order_button"onclick="menu_click()">Rainbow Roll</button>
+                <button class="order_button"onclick="menu_click()">American Dream Roll</button>
+                <button class="order_button"onclick="menu_click()">Crab Rangoon Roll</button>
+                <button class="order_button"onclick="menu_click()">Unagi Roll</button>
+                <button class="order_button"onclick="menu_click()">Tuna Roll</button>
+                <button class="order_button"onclick="menu_click()">Spicy Tuna Roll</button>
+                <button class="order_button"onclick="menu_click()">Salmon Roll</button>
+                <button class="order_button"onclick="menu_click()">Spicy Salmon Roll</button>
+                <button class="order_button"onclick="menu_click()">Spicy Shrimp Roll</button>
+                <button class="order_button"onclick="menu_click()">Crispy California Roll</button>
+                <button class="order_button"onclick="menu_click()">Trust Me Roll</button>
+                <button class="order_button"onclick="menu_click()">White Tuna Roll</button>
+                <button class="order_button"onclick="menu_click()">Spicy White Tuna Roll</button>
             </div>
         </div>
+
         
         
     </main>

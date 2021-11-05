@@ -129,8 +129,8 @@ header, footer {
     grid-gap: .5em;
     margin-left: auto;
     margin-right: auto;
-    
 }
+
 .order_grid > div {
     font-size:larger;
     text-align: center;
@@ -193,5 +193,22 @@ header, footer {
 	width: 100px;
     border-radius: 25px;
 
+}
+
+.order_button {
+    font-family:"Courier New', Courier, monospace";
+    font-size:larger;
+    text-align: center;
+    background-color:hsla(0, 0%, 83%, 0.781);
+    padding:1em;
+    border-radius: 15px;
+    margin-left: 1em;
+    margin-right: 1em;
+    transition-duration: 0.4s;
+}
+.order_button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
