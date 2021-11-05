@@ -13,4 +13,5 @@ function submit_data() {
     display.innerHTML += ("<p>" + email + "</p>");
     display.innerHTML += ("<p>" + phone + "</p>");
     display.innerHTML += ("<p>" + comments + "</p>");
+    return false;
 }
