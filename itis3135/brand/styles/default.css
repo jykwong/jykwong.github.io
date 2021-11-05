@@ -11,6 +11,8 @@ header, footer {
     text-align: center;
 }
 nav {
+    position:relative;
+    margin:auto;
 	text-align: center;
     font-size: 20px;
 }
