@@ -153,6 +153,10 @@ header, footer {
 	width: 645px;
 	margin: 40px auto;
 	overflow:auto;
+    background-color:hsla(0, 0%, 83%, 0.452);
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
 }
 
 .slider
