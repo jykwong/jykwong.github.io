@@ -157,6 +157,7 @@ header, footer {
     padding-left: 3em;
     padding-right: 3em;
     padding-bottom: 3em;
+    border-radius: 2%;
 }
 
 .slider
