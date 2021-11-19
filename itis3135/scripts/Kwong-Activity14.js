@@ -23,7 +23,8 @@ $(document).ready(function() {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
                             $("main > h1").html(
-                                value.title
+                                value.title,
+                                console.log(filePath + "2")
                             );
                             $("main > h2").html(
                                 value.month
