@@ -11,6 +11,7 @@ $(document).ready(function() {
         },
         dataType: "json",
         success: function(data) {
+            console.log(data);
             $("#team").html("");
             $(data).find("management").children().each(function() {
                 var jsonDoc = $(this);
