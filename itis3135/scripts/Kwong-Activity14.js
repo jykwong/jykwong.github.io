@@ -22,17 +22,17 @@ $(document).ready(function() {
                 $.getJSON(filePath, function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
-                            $("main h1").html(
+                            $("h1").html(
                                 value.title
                             );
-                            $("main h2").html(
+                            $("h2").html(
                                 value.month
                             )
-                            $("main h3").html(
+                            $("h3").html(
                                 value.speaker
                             )
-                            $("main img").attr("src", value.image)
-                            $("main p").html(
+                            $("img").attr("src", value.image)
+                            $("p").html(
                                 value.text
                             )
                         });
@@ -40,5 +40,5 @@ $(document).ready(function() {
                 });
             }//end success function
         }); //end ajax method
-    }); //end nav_list click
+    }); //end nav_1ist c1ick
 }); //end ready
