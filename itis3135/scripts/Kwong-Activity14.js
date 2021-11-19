@@ -22,17 +22,17 @@ $(document).ready(function() {
                 $.getJSON(filePath, function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
-                            $("h1").html(
+                            $("main h1").html(
                                 value.title
                             );
-                            $("h2").html(
+                            $("main h2").html(
                                 value.month
                             )
-                            $("h3").html(
+                            $("main h3").html(
                                 value.speaker
                             )
-                            $("img").attr("src", value.image)
-                            $("p").html(
+                            $("main img").attr("src", value.image)
+                            $("main p").html(
                                 value.text
                             )
                         });
