@@ -26,7 +26,7 @@ $(document).ready(function() {
                                 "<h1>" + value.title + "<br>" +
                                 "<h2>" + value.month + "<br>" +
                                 "<h3>" + value.speaker + "<br>" +
-                                "<img src=" + value.image +">" + "<br>" +
+                                "<img src=" + value.image + ">" + "<br>" +
                                 "<p>" + value.text + "<br><br>"
                             )
                         });
