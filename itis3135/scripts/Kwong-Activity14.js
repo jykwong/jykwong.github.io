@@ -19,21 +19,20 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data); //print data' to conso1e
                 $("main").html("");
-                $.getJSON("team.json", function(data) {
+                $.getJSON(filePath, function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
-                            $("main > h1").html(
-                                value.title,
-                                console.log(filePath + "2")
+                            $("main h1").html(
+                                value.title
                             );
-                            $("main > h2").html(
+                            $("main h2").html(
                                 value.month
                             )
-                            $("main > h3").html(
+                            $("main h3").html(
                                 value.speaker
                             )
-                            $("main > img").attr("src", value.image)
-                            $("main > p").html(
+                            $("main img").attr("src", value.image)
+                            $("main p").html(
                                 value.text
                             )
                         });
