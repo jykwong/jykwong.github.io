@@ -23,9 +23,9 @@ $(document).ready(function() {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
                             $("main").append(
-                                "<h1>" + value.title + "<br>" +
-                                "<h2>" + value.month + "<br>" +
-                                "<h3>" + value.speaker + "<br>" +
+                                "<h1>" + value.title + "</h1><br>" +
+                                "<h2>" + value.month + "</h2><br>" +
+                                "<h3>" + value.speaker + "</h3><br>" +
                                 "<img src=" + value.image + ">" + "<br>" +
                                 "<p>" + value.text + "</p><br><br>"
                             )
