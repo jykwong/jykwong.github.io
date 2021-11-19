@@ -13,7 +13,7 @@ $(document).ready(function() {
         success: function(data) {
             console.log(data);
             $("#team").html("");
-            $(data).find("management").children().each(function() {
+            $(data).find("teammembers").children().each(function() {
                 var jsonDoc = $(this);
                 $("#team").append
                 ("<h3>" + jsonDoc.find("name").text() + "</h3>" +
