@@ -22,22 +22,12 @@ $(document).ready(function() {
                 $.getJSON(filePath, function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
-                            $("h1").html(
-                                value.title,
-                                console.log(value.title)
-                            );
-                            $("h2").html(
-                                value.month,
-                                console.log(value.month)
-                            )
-                            $("h3").html(
-                                value.speaker,
-                                console.log(value.speaker)
-                            )
-                            $("img").attr("src", value.image)
-                            $("p").html(
-                                value.text,
-                                console.log(value.text)
+                            $("main").append(
+                                "<h1>" + value.title + "<br>" +
+                                "<h2>" + value.month + "<br>" +
+                                "<h3>" + value.speaker + "<br>" +
+                                "<img src=" + value.image +">" + "<br>" +
+                                "<p>" + value.text + "<br><br>"
                             )
                         });
                     });
