@@ -27,7 +27,7 @@ $(document).ready(function() {
                                 "<h2>" + value.month + "<br>" +
                                 "<h3>" + value.speaker + "<br>" +
                                 "<img src=" + value.image + ">" + "<br>" +
-                                "<p>" + value.text + "<br><br>"
+                                "<p>" + value.text + "</p><br><br>"
                             )
                         });
                     });
