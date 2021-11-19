@@ -7,9 +7,9 @@ $(document).ready(function() {
 
         $.ajax({
             type: "get",
-            url: "team.json",
+            url: filePath,
             beforeSend: function() {
-                $("#team").html("Loading...");
+                $("main").html("Loading...");
             },
             timeout: 10000,
             error: function(xhr, status, error) {
@@ -18,7 +18,7 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data) {
                 console.log(data); //print data' to conso1e
-                $("#team").html("");
+                $("#main").html("");
                 $.getJSON("team.json", function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
