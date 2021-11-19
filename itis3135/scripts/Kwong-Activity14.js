@@ -18,7 +18,7 @@ $(document).ready(function() {
             dataType: "json",
             success: function(data) {
                 console.log(data); //print data' to conso1e
-                $("#main").html("");
+                $("main").html("");
                 $.getJSON("team.json", function(data) {
                     $.each(data, function() {
                         $.each(this, function(key, value) {
