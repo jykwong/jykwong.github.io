@@ -16,7 +16,7 @@ $(document).ready(function(){
             $.getJSON("json_files/facultyList.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#team").append(
+                        $("#faculty").append(
                             "<img src=" + value.image + ">" +
                             "<h2>" + value.full_name + "</h2>" +
                             "<h3>" + value.department + "</h3>" +
