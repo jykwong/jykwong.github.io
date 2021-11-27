@@ -5,7 +5,7 @@ $(document).ready(function(){
         var html = "";
         $.each(data.items, function(i, item) {
             html += "<h2>" + item.title + "</h2>";
-            html += "<a href=\"" + item.media.m  + "\"" + "data-lightbox=\"flickr\"" + "data-title=" + item.description + ">" + "<img src=" + item.media.m + ">" + "</a>";
+            html += "<a href=\"" + item.media.m  + "\"" + "data-lightbox=\"flickr\"" + "data-title=\"" + item.description + "\"" + ">" + "</a>";
             //html += "<img src=" + item.media.m  + ">"; from book
             html += "<p></p>";
         })//end .each
