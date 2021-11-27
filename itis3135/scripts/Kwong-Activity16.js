@@ -3,11 +3,13 @@ $(document).ready(function(){
     
     $.getJSON(url, function(data) {
         var html = "";
+        var count = 1;
         $.each(data.items, function(i, item) {
-            html += "<h2>" + item.title + "</h2>";
-            html += "<a href=" + item.media.m + ">" + "<img src=" + item.media.m + " data-lightbox="+ item.title + " data-title=" + item.description + "></a>";
+           // html += "<h2>" + item.title + "</h2>";
+            html += "<a href=" + item.media.m + ">" + "<img src=" + item.media.m  + "data-lightbox=flickr" + count + "\"" + "data-title=" + item.title + "></a>";
             //html += "<img src=" + item.media.m  + ">"; from book
             html += "<p></p>";
+            count++;
         })//end .each
         $("#new_building").html(html);
     })//end getJSON
