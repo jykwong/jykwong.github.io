@@ -6,7 +6,6 @@ $(document).ready(function(){
         var html = "";
         $.each(data.items, function(i, item) {
             html += "<a href=" + item.media.m + " data-lightbox=\"" + "flickr\"" + " data-title=" + item.title + ">" + "<img src=" + item.media.m + "></a>";
-            //html += "<img src=" + item.media.m  + ">"; from book
         })//end .each
         $("#new_building").html(html);
     })//end getJSON
