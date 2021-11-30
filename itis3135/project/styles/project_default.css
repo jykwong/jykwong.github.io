@@ -149,7 +149,7 @@ header, footer {
 }
 
 .bx-wrapper {
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 #id_pager1, #id_pager2, #id_pager3 {
 	text-align: center;
@@ -162,6 +162,19 @@ header, footer {
     display:block;
     margin: 0 auto;
 }
+.bx-caption {
+    text-align: center;
+    bottom: 0;
+    height: 2.5em;
+    line-height: 1em;
+  }
+  .bx-viewport ul {
+      margin: 0;
+      padding: 0;
+  }
+  .bx-wrapper img {
+      width: 640px;
+  }
 
 
 
