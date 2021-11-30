@@ -152,6 +152,7 @@ $(document).ready(function() {
     }
 
     reset_order = function() {
+        string = "";
         items_id.innerHTML = "Order Has Been Reset!";
         totalCost = 0.00;
         cost_id.innerHTML = "$" + totalCost;
