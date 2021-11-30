@@ -6,7 +6,7 @@
     <title>Chu's Noodles - Order</title>
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> <!--not used on this page but it needed to be linked for the ordering script to work properly-->
     <script src="scripts/project_script.js"></script>
 </head>
 
@@ -46,9 +46,7 @@
                         <label for="instructions" style="font-weight:bold;">Instructions</label>
                         <textarea id="instructions" placeholder="If there are any custom instructions that you want for your order (e.g. allergies), please let us know here." name="instructions" rows="5" cols="40"></textarea>
                     </div>
-                    <input type="submit"style="font-weight:bold; font-size: large;" id="Place Order">
-                    <button id="reset" onclick="reset_order()" style="font-weight:bold; font-size: large;">Reset Order</button>
-                    
+                    <input type="submit"style="font-weight:bold; font-size: large;" id="Place Order">                    
                 </form>
 
                 <div> <!--javascript needed to manipulate divs below based on customer's selection-->
@@ -63,6 +61,7 @@
                     <div id="order_cost">
                         <p id="cost">$0.00</p> <!--script will update the cost after clicking on buttons below-->
                     </div>
+                    <button id="reset" onclick="reset_order()" style="font-weight:bold; font-size: large;">Reset Order</button>
                 </div>
             </div>
         </div>
