@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function() {
     const menuItems = [ //The comments are for indexes
         {name: "Shrimp Spring Roll", price: 7.99},//0
         {name: "Pork Pot Sticker", price: 8.99},//1
@@ -82,4 +82,4 @@ $(document).ready(function(){
 
         
     }
-});
+};// end onload
