@@ -1,3 +1,4 @@
+var menu_click;
 window.onload = function() {
     const menuItems = [ //The comments are for indexes
         {name: "Shrimp Spring Roll", price: 7.99},//0
@@ -66,8 +67,11 @@ window.onload = function() {
         {name: "White Tuna Roll", price: 6.99},//63
         {name: "Spicy White Tuna Roll", price: 7.50}//64
     ];
+    function saySomething() {
+        console.log("Test 123");
+    }
     //console.log(menuItems[3].price) outputs 5.99 from Crab Rangoon(index 3) <-- this could work
-    function menu_click(clicked_id) {
+    menu_click = function(clicked_id) {
         var totalCost;
         var amt;
         //we're using the id to match with the array objects
@@ -76,7 +80,8 @@ window.onload = function() {
         for(let i = 0; i < menuLength; i++) {
             if (menuItems[i].name === clicked_id) {
                 itemIndex = i;
-                console.log(itemIndex);
+                console.log(menuItems[i].name);//for testing-- menu item name to console
+                console.log(menuItems[i].price)//for testing-- menu item price to console
             }
         }
 
