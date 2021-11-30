@@ -6,7 +6,6 @@
     <title>Chu's Noodles - Order</title>
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="scripts/project_script.js"></script>
 </head>
 
 <body>
@@ -46,19 +45,21 @@
                         <textarea id="instructions" placeholder="If there are any custom instructions that you want for your order (e.g. allergies), please let us know here." name="instructions" rows="5" cols="40"></textarea>
                     </div>
                     <input type="submit"style="font-weight:bold; font-size: large;" id="Place Order">
+                    <button id="reset" onclick="reset_order()" style="font-weight:bold; font-size: large;">Reset Order</button>
+                    
                 </form>
 
                 <div> <!--javascript needed to manipulate divs below based on customer's selection-->
                     <h4>Order Details</h4>
                     <div id="order_details_items_ordered">
-                        <h4>Items in Order:</h4>
+                        <h4>Items in Order:</h4> <!--Just simply a div for a header. Nothing really happens here-->
                     </div>
                     <div id="order_details_items_bought">
-                        some item we buy
+                        <p id="items">Order is Empty!</p> <!--script will update this with names of menu items-->
                     </div>
                     <h4>Order Cost:</h4>
                     <div id="order_cost">
-                        $
+                        <p id="cost">$0.00</p> <!--script will update the cost after clicking on buttons below-->
                     </div>
                 </div>
             </div>
@@ -162,6 +163,7 @@
     </main>
 
     <footer>
+        <script src="scripts/project_script.js"></script> <!--put script tag here to get javascript to work-->
         <br/>
         <nav>
             <a href="index.html" target="_blank">Home</a> - 

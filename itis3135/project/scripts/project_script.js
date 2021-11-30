@@ -1,6 +1,19 @@
-var menu_click;
+//Declare Global Variables
+var menu_click; //will be a function
+var reset_order; //will be a function
+var totalCost=0;
+var amt=0;
+var salesTax = .0475;
+var add_item;
+var item_cost;
+var items_id;
+var cost_id;
+var string = ""
+
 window.onload = function() {
-    const menuItems = [ //The comments are for indexes
+    items_id = document.getElementById("items");
+    cost_id = document.getElementById("cost");
+    const menuItems = [ //Menu as array of objects. The below are comments are for index.
         {name: "Shrimp Spring Roll", price: 7.99},//0
         {name: "Pork Pot Sticker", price: 8.99},//1
         {name: "6pc Chicken Wing", price:8.99},//2
@@ -67,13 +80,9 @@ window.onload = function() {
         {name: "White Tuna Roll", price: 6.99},//63
         {name: "Spicy White Tuna Roll", price: 7.50}//64
     ];
-    function saySomething() {
-        console.log("Test 123");
-    }
-    //console.log(menuItems[3].price) outputs 5.99 from Crab Rangoon(index 3) <-- this could work
+
+
     menu_click = function(clicked_id) {
-        var totalCost;
-        var amt;
         //we're using the id to match with the array objects
         var menuLength = menuItems.length;
         var itemIndex;
@@ -82,9 +91,32 @@ window.onload = function() {
                 itemIndex = i;
                 console.log(menuItems[i].name);//for testing-- menu item name to console
                 console.log(menuItems[i].price)//for testing-- menu item price to console
+                amt = menuItems[i].price; //save menu item price to variable
+                totalCost += amt; //adds amt variable to total cost
+                console.log("total: " + totalCost); //for testing-- show new total
+
+                string += menuItems[i].name + "<br>";
             }
         }
+        totalCost = totalCost + (totalCost*salesTax);
+        items_id.innerHTML = string;
+        cost_id.innerHTML = "$"+totalCost.toFixed(2);
 
         
     }
+
+    reset_order = function() {
+        items_id.innerHTML = "Order Has Been Reset!";
+        totalCost = 0.00;
+        cost_id.innerHTML = "$" + totalCost;
+    }
+
+
 };// end onload
+
+
+// NOTES //
+/*  console.log(menuItems[3].price) outputs 5.99 from Crab Rangoon(index 3) <-- this could work
+    totalCost += parseFloat(menuItem[i].price).toFixed(2) maybe not needed but if I do, here it is.
+    function variables need to be declared global or else button wont call the function
+*/
