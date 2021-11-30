@@ -6,6 +6,7 @@
     <title>Chu's Noodles - Order</title>
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
     <script src="scripts/project_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@
                         <label for="instructions" style="font-weight:bold;">Instructions</label>
                         <textarea id="instructions" placeholder="If there are any custom instructions that you want for your order (e.g. allergies), please let us know here." name="instructions" rows="5" cols="40"></textarea>
                     </div>
-                    <input type="submit"style="font-weight:bold; font-size: large;" value="Place Order">
+                    <input type="submit"style="font-weight:bold; font-size: large;" id="Place Order">
                 </form>
 
                 <div> <!--javascript needed to manipulate divs below based on customer's selection-->
@@ -67,14 +68,14 @@
         <div class="container">
             <div class="order_grid"> 
                 <!-- Buttons for appetizer selection -->
-                <button class="order_button"onclick="menu_click()">Shrimp Spring Roll</button>
-                <button class="order_button"onclick="menu_click()">Pork Pot Sticker</button>
-                <button class="order_button"onclick="menu_click()">6pc Chicken Wing</button>
-                <button class="order_button"onclick="menu_click()">Crab Rangoon</button>
-                <button class="order_button"onclick="menu_click()">Edamame</button>
-                <button class="order_button"onclick="menu_click()">Harcau Shrimp Dumplings</button>
-                <button class="order_button"onclick="menu_click()">Vegetable Tempura</button>
-                <button class="order_button"onclick="menu_click()">Salt & Pepper Calamari</button>
+                <button class="order_button" id="Shrimp Spring Roll" onclick="menu_click(this.id)">Shrimp Spring Roll</button>
+                <button class="order_button" id="Pork Pot Sticker" onclick="menu_click(this.id)">Pork Pot Sticker</button>
+                <button class="order_button" id="6pc Chicken Wing" onclick="menu_click(this.id)">6pc Chicken Wing</button>
+                <button class="order_button" id="Crab Rangoon" onclick="menu_click(this.id)">Crab Rangoon</button>
+                <button class="order_button" id="Edamame" onclick="menu_click(this.id)">Edamame</button>
+                <button class="order_button" id="Harcau Shrimp Dumplings" onclick="menu_click(this.id)">Harcau Shrimp Dumplings</button>
+                <button class="order_button" id="Vegetable Tempura" onclick="menu_click(this.id)">Vegetable Tempura</button>
+                <button class="order_button" id="Salt & Pepper Calamari" onclick="menu_click(this.id)">Salt & Pepper Calamari</button>
             </div>
         </div>
 
@@ -82,32 +83,31 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for hibachi selection -->
-                <button class="order_button"onclick="menu_click()">Filet Mignon</button>
-                <button class="order_button"onclick="menu_click()">Steak</button>
-                <button class="order_button"onclick="menu_click()">Steak</button>
-                <button class="order_button"onclick="menu_click()">Ribeye</button>
-                <button class="order_button"onclick="menu_click()">Chicken</button>
-                <button class="order_button"onclick="menu_click()">Small Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Lobster</button>
-                <button class="order_button"onclick="menu_click()">Vegetable Dinner</button>
-                <button class="order_button"onclick="menu_click()">Steak & Chicken</button>
-                <button class="order_button"onclick="menu_click()">Steak & Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Steak & Small Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Steak & Lobster</button>
-                <button class="order_button"onclick="menu_click()">Ribeye & Chicken</button>
-                <button class="order_button"onclick="menu_click()">Ribeye & Small Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Ribeye & Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Ribeye & Lobster</button>
-                <button class="order_button"onclick="menu_click()">Filet & Chicken</button>
-                <button class="order_button"onclick="menu_click()">Filet & Small Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Filet & Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Filet & Lobster</button>
-                <button class="order_button"onclick="menu_click()">Chicken & Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Chicken & Small Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Chicken & Lobster</button>
-                <button class="order_button"onclick="menu_click()">Lobster & Jumbo Shrimp</button>
-                <button class="order_button"onclick="menu_click()">Lobster & Small Shrimp</button>
+                <button class="order_button" id="Filet Mignon" onclick="menu_click(this.id)">Filet Mignon</button>
+                <button class="order_button" id="Steak" onclick="menu_click(this.id)">Steak</button>
+                <button class="order_button" id="Ribeye" onclick="menu_click(this.id)">Ribeye</button>
+                <button class="order_button" id="Chicken" onclick="menu_click(this.id)">Chicken</button>
+                <button class="order_button" id="Small Shrimp" onclick="menu_click(this.id)">Small Shrimp</button>
+                <button class="order_button" id="Jumbo Shrimp" onclick="menu_click(this.id)">Jumbo Shrimp</button>
+                <button class="order_button" id="Lobster" onclick="menu_click(this.id)">Lobster</button>
+                <button class="order_button" id="Vegetable Dinner" onclick="menu_click(this.id)">Vegetable Dinner</button>
+                <button class="order_button" id="Steak & Chicken" onclick="menu_click(this.id)">Steak & Chicken</button>
+                <button class="order_button" id="Steak & Jumbo Shrimp" onclick="menu_click(this.id)">Steak & Jumbo Shrimp</button>
+                <button class="order_button" id="Steak & Small Shrimp" onclick="menu_click(this.id)">Steak & Small Shrimp</button>
+                <button class="order_button" id="Steak & Lobster" onclick="menu_click(this.id)">Steak & Lobster</button>
+                <button class="order_button" id="Ribeye & Chicken" onclick="menu_click(this.id)">Ribeye & Chicken</button>
+                <button class="order_button" id="Ribeye & Small Shrimp" onclick="menu_click(this.id)">Ribeye & Small Shrimp</button>
+                <button class="order_button" id="Ribeye & Jumbo Shrimp" onclick="menu_click(this.id)">Ribeye & Jumbo Shrimp</button>
+                <button class="order_button" id="Ribeye & Lobster" onclick="menu_click(this.id)">Ribeye & Lobster</button>
+                <button class="order_button" id="Filet & Chicken" onclick="menu_click(this.id)">Filet & Chicken</button>
+                <button class="order_button" id="Filet & Small Shrimp" onclick="menu_click(this.id)">Filet & Small Shrimp</button>
+                <button class="order_button" id="Filet & Jumbo Shrimp" onclick="menu_click(this.id)">Filet & Jumbo Shrimp</button>
+                <button class="order_button" id="Filet & Lobster" onclick="menu_click(this.id)">Filet & Lobster</button>
+                <button class="order_button" id="Chicken & Jumbo Shrimp" onclick="menu_click(this.id)">Chicken & Jumbo Shrimp</button>
+                <button class="order_button" id="Chicken & Small Shrimp" onclick="menu_click(this.id)">Chicken & Small Shrimp</button>
+                <button class="order_button" id="Chicken & Lobster" onclick="menu_click(this.id)">Chicken & Lobster</button>
+                <button class="order_button" id="Lobster & Jumbo Shrimp" onclick="menu_click(this.id)">Lobster & Jumbo Shrimp</button>
+                <button class="order_button" id="Lobster & Small Shrimp" onclick="menu_click(this.id)">Lobster & Small Shrimp</button>
             </div>
         </div>
 
@@ -115,22 +115,22 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for noodle selection -->
-                <button class="order_button"onclick="menu_click()">Japanese Tempura Udon Bowl</button>
-                <button class="order_button"onclick="menu_click()">Seafood Udon Bowl</button>
-                <button class="order_button"onclick="menu_click()">Hong Kong Wonton Egg Noodle Bowl</button>
-                <button class="order_button"onclick="menu_click()">Vietnamese Beef Rice Noodle Broth(Pho)</button>
-                <button class="order_button"onclick="menu_click()">Chicken Mushroom Soba Noodle Bowl</button>
-                <button class="order_button"onclick="menu_click()">Seafood Curry Egg Noodle Bowl </button>
-                <button class="order_button"onclick="menu_click()">Tum Yum Seafood Mei Fun Bowl</button>
-                <button class="order_button"onclick="menu_click()">Miso Ginger Pork Ramen Bowl</button>
-                <button class="order_button"onclick="menu_click()">Pad See Yew(Thai)</button>
-                <button class="order_button"onclick="menu_click()">Hong Kong Chow Fun</button>
-                <button class="order_button"onclick="menu_click()">Curry Chow Mei Fun</button>
-                <button class="order_button"onclick="menu_click()">Chinese Lo Mein</button>
-                <button class="order_button"onclick="menu_click()">Stir Fry Udon</button>
-                <button class="order_button"onclick="menu_click()">Double Pan Fried Egg Noodles</button>
-                <button class="order_button"onclick="menu_click()">Stir Fried Yaki Ramen</button>
-                <button class="order_button"onclick="menu_click()">Buckwheat Yaki Soba</button>
+                <button class="order_button" id="Japanese Tempura Udon Bowl" onclick="menu_click(this.id)">Japanese Tempura Udon Bowl</button>
+                <button class="order_button" id="Seafood Udon Bowl" onclick="menu_click(this.id)">Seafood Udon Bowl</button>
+                <button class="order_button" id="Hong Kong Wonton Egg Noodle Bowl" onclick="menu_click(this.id)">Hong Kong Wonton Egg Noodle Bowl</button>
+                <button class="order_button" id="Vietnamese Beef Rice Noodle Broth(Pho)" onclick="menu_click(this.id)">Vietnamese Beef Rice Noodle Broth(Pho)</button>
+                <button class="order_button" id="Chicken Mushroom Soba Noodle Bowl" onclick="menu_click(this.id)">Chicken Mushroom Soba Noodle Bowl</button>
+                <button class="order_button" id="Seafood Curry Egg Noodle Bowl" onclick="menu_click(this.id)">Seafood Curry Egg Noodle Bowl </button>
+                <button class="order_button" id="Tum Yum Seafood Mei Fun Bowl" onclick="menu_click(this.id)">Tum Yum Seafood Mei Fun Bowl</button>
+                <button class="order_button" id="Miso Ginger Pork Ramen Bowl" onclick="menu_click(this.id)">Miso Ginger Pork Ramen Bowl</button>
+                <button class="order_button" id="Pad See Yew(Thai)" onclick="menu_click(this.id)">Pad See Yew(Thai)</button>
+                <button class="order_button" id="Hong Kong Chow Fun" onclick="menu_click(this.id)">Hong Kong Chow Fun</button>
+                <button class="order_button" id="Curry Chow Mei Fun" onclick="menu_click(this.id)">Curry Chow Mei Fun</button>
+                <button class="order_button" id="Chinese Lo Mein" onclick="menu_click(this.id)">Chinese Lo Mein</button>
+                <button class="order_button" id="Stir Fry Udon" onclick="menu_click(this.id)">Stir Fry Udon</button>
+                <button class="order_button" id="Double Pan Fried Egg Noodles" onclick="menu_click(this.id)">Double Pan Fried Egg Noodles</button>
+                <button class="order_button" id="Stir Fried Yaki Ramen" onclick="menu_click(this.id)">Stir Fried Yaki Ramen</button>
+                <button class="order_button" id="Buckwheat Yaki Soba" onclick="menu_click(this.id)">Buckwheat Yaki Soba</button>
             </div>
         </div>
 
@@ -138,22 +138,22 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for sushi selection -->
-                <button class="order_button"onclick="menu_click()">California Roll</button>
-                <button class="order_button"onclick="menu_click()">Philadelphia Roll</button>
-                <button class="order_button"onclick="menu_click()">Dragon Roll</button>
-                <button class="order_button"onclick="menu_click()">Rainbow Roll</button>
-                <button class="order_button"onclick="menu_click()">American Dream Roll</button>
-                <button class="order_button"onclick="menu_click()">Crab Rangoon Roll</button>
-                <button class="order_button"onclick="menu_click()">Unagi Roll</button>
-                <button class="order_button"onclick="menu_click()">Tuna Roll</button>
-                <button class="order_button"onclick="menu_click()">Spicy Tuna Roll</button>
-                <button class="order_button"onclick="menu_click()">Salmon Roll</button>
-                <button class="order_button"onclick="menu_click()">Spicy Salmon Roll</button>
-                <button class="order_button"onclick="menu_click()">Spicy Shrimp Roll</button>
-                <button class="order_button"onclick="menu_click()">Crispy California Roll</button>
-                <button class="order_button"onclick="menu_click()">Trust Me Roll</button>
-                <button class="order_button"onclick="menu_click()">White Tuna Roll</button>
-                <button class="order_button"onclick="menu_click()">Spicy White Tuna Roll</button>
+                <button class="order_button" id="California Roll" onclick="menu_click(this.id)">California Roll</button>
+                <button class="order_button" id="Philadelphia Roll" onclick="menu_click(this.id)">Philadelphia Roll</button>
+                <button class="order_button" id="Dragon Roll" onclick="menu_click(this.id)">Dragon Roll</button>
+                <button class="order_button" id="Rainbow Roll" onclick="menu_click(this.id)">Rainbow Roll</button>
+                <button class="order_button" id="American Dream Roll" onclick="menu_click(this.id)">American Dream Roll</button>
+                <button class="order_button" id="Crab Rangoon Roll" onclick="menu_click(this.id)">Crab Rangoon Roll</button>
+                <button class="order_button" id="Unagi Roll" onclick="menu_click(this.id)">Unagi Roll</button>
+                <button class="order_button" id="Tuna Roll" onclick="menu_click(this.id)">Tuna Roll</button>
+                <button class="order_button" id="Spicy Tuna Roll" onclick="menu_click(this.id)">Spicy Tuna Roll</button>
+                <button class="order_button" id="Salmon Roll" onclick="menu_click(this.id)">Salmon Roll</button>
+                <button class="order_button" id="Spicy Salmon Roll" onclick="menu_click(this.id)">Spicy Salmon Roll</button>
+                <button class="order_button" id="Spicy Shrimp Roll" onclick="menu_click(this.id)">Spicy Shrimp Roll</button>
+                <button class="order_button" id="Crispy California Roll" onclick="menu_click(this.id)">Crispy California Roll</button>
+                <button class="order_button" id="Trust Me Roll" onclick="menu_click(this.id)">Trust Me Roll</button>
+                <button class="order_button" id="White Tuna Roll" onclick="menu_click(this.id)">White Tuna Roll</button>
+                <button class="order_button" id="Spicy White Tuna Roll" onclick="menu_click(this.id)">Spicy White Tuna Roll</button>
             </div>
         </div>
 
