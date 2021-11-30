@@ -148,6 +148,14 @@ header, footer {
     margin-right: 1em;
 }
 
+.bx-wrapper {
+	margin-bottom: 20px;
+}
+#id_pager1, #id_pager2, #id_pager3 {
+	text-align: center;
+	font-size: 90%;
+	color: green;
+}
 #sliderbx {
     display: flex;
     justify-content: center;
