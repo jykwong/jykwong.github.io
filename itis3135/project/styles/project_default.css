@@ -149,16 +149,21 @@ header, footer {
 }
 
 .bx-wrapper {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 }
 #id_pager1, #id_pager2, #id_pager3 {
 	text-align: center;
 	font-size: 90%;
-	color: green;
+	color: white;
 }
-#sliderbx {
+.sliderbx {
     justify-content: center;
+    max-width: 640px;
+    display:block;
+    margin: 0 auto;
 }
+
+
 
 .order_button {
     font-family:"Courier New', Courier, monospace";

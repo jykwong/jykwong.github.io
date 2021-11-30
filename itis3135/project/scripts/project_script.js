@@ -16,18 +16,23 @@ $(document).ready(function() {
         auto: false,
         autoControls: true,
         captions: true,
+        slideWidth: 640,
+        slideMargin: 0,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
         pagerType: 'short',
         captions: true,
-
+        minSlides: 2,
+        maxSlides: 2
     });
     $("#slider2").bxSlider({
         mode: 'fade',
         auto: false,
         autoControls: true,
         captions: true,
+        slideWidth: 640,
+        slideMargin: 10,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
@@ -39,6 +44,8 @@ $(document).ready(function() {
         auto: false,
         autoControls: true,
         captions: true,
+        slideWidth: 640,
+        slideMargin: 10,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
