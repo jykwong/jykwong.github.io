@@ -18,7 +18,7 @@ $(document).ready(function() {
         captions: true,
         minSlides: 2,
         maxSlides: 2,
-        slideWidth: 250,
+        slideWidth: 651,
         slideMargin: 10,
         randomStart: true,
         adaptiveHeight: true,
