@@ -17,14 +17,12 @@ $(document).ready(function() {
         autoControls: true,
         captions: true,
         slideWidth: 640,
-        slideMargin: 0,
+        slideMargin: 2,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
         pagerType: 'short',
         captions: true,
-        minSlides: 2,
-        maxSlides: 2
     });
     $("#slider2").bxSlider({
         mode: 'fade',
@@ -32,7 +30,7 @@ $(document).ready(function() {
         autoControls: true,
         captions: true,
         slideWidth: 640,
-        slideMargin: 10,
+        slideMargin: 2,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
@@ -45,7 +43,7 @@ $(document).ready(function() {
         autoControls: true,
         captions: true,
         slideWidth: 640,
-        slideMargin: 10,
+        slideMargin: 2,
         randomStart: true,
         adaptiveHeight: true,
         pager: true,
