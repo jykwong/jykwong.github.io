@@ -156,6 +156,9 @@ header, footer {
 	font-size: 90%;
 	color: green;
 }
+#sliderbx {
+    justify-content: center;
+}
 
 .order_button {
     font-family:"Courier New', Courier, monospace";
