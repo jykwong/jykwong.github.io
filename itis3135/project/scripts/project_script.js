@@ -10,7 +10,56 @@ var items_id;
 var cost_id;
 var string = ""
 
-window.onload = function() {
+$(document).ready(function() {
+    $("#slider1").bxSlider({
+        mode: 'fade',
+        auto: false,
+        autoControls: true,
+        captions: true,
+        minSlides: 2,
+        maxSlides: 2,
+        slideWidth: 250,
+        slideMargin: 10,
+        randomStart: true,
+        adaptiveHeight: true,
+        pager: true,
+        pagerType: 'short',
+        captions: true,
+
+    });
+    $("#slider2").bxSlider({
+        mode: 'fade',
+        auto: false,
+        autoControls: true,
+        captions: true,
+        minSlides: 2,
+        maxSlides: 2,
+        slideWidth: 250,
+        slideMargin: 10,
+        randomStart: true,
+        adaptiveHeight: true,
+        pager: true,
+        pagerType: 'short',
+        captions: true,
+    });
+    $("#slider3").bxSlider({
+        mode: 'fade',
+        auto: false,
+        autoControls: true,
+        captions: true,
+        minSlides: 2,
+        maxSlides: 2,
+        slideWidth: 250,
+        slideMargin: 10,
+        randomStart: true,
+        adaptiveHeight: true,
+        pager: true,
+        pagerType: 'short',
+        captions: true,
+    });
+
+
+    //Script for Order Page
     items_id = document.getElementById("items");
     cost_id = document.getElementById("cost");
     const menuItems = [ //Menu as array of objects. The below are comments are for index.
@@ -110,9 +159,7 @@ window.onload = function() {
         totalCost = 0.00;
         cost_id.innerHTML = "$" + totalCost;
     }
-
-
-};// end onload
+});// end onload
 
 
 // NOTES //
