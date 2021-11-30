@@ -67,7 +67,7 @@ $(document).ready(function(){
         {name: "Spicy White Tuna Roll", price: 7.50}//64
     ];
     //console.log(menuItems[3].price) outputs 5.99 from Crab Rangoon(index 3) <-- this could work
-    function menuClick(clicked_id) {
+    function menu_click(clicked_id) {
         var totalCost;
         var amt;
         //we're using the id to match with the array objects
