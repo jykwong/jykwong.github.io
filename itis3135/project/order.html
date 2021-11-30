@@ -6,6 +6,8 @@
     <title>Chu's Noodles - Order</title>
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="scripts/project_script.js"></script>
 </head>
 
 <body>
@@ -69,14 +71,14 @@
         <div class="container">
             <div class="order_grid"> 
                 <!-- Buttons for appetizer selection -->
-                <button class="order_button" id="Shrimp Spring Roll" onclick="menu_click(this.id)">Shrimp Spring Roll</button>
-                <button class="order_button" id="Pork Pot Sticker" onclick="menu_click(this.id)">Pork Pot Sticker</button>
-                <button class="order_button" id="6pc Chicken Wing" onclick="menu_click(this.id)">6pc Chicken Wing</button>
-                <button class="order_button" id="Crab Rangoon" onclick="menu_click(this.id)">Crab Rangoon</button>
-                <button class="order_button" id="Edamame" onclick="menu_click(this.id)">Edamame</button>
-                <button class="order_button" id="Harcau Shrimp Dumplings" onclick="menu_click(this.id)">Harcau Shrimp Dumplings</button>
-                <button class="order_button" id="Vegetable Tempura" onclick="menu_click(this.id)">Vegetable Tempura</button>
-                <button class="order_button" id="Salt & Pepper Calamari" onclick="menu_click(this.id)">Salt & Pepper Calamari</button>
+                <button class="order_button" id="Shrimp Spring Roll" onclick="menu_click(this.id)">Shrimp Spring Roll <br>$7.99</button>
+                <button class="order_button" id="Pork Pot Sticker" onclick="menu_click(this.id)">Pork Pot Sticker <br>$8.99</button>
+                <button class="order_button" id="6pc Chicken Wing" onclick="menu_click(this.id)">6pc Chicken Wing<br>$8.99</button>
+                <button class="order_button" id="Crab Rangoon" onclick="menu_click(this.id)">Crab Rangoon<br>$5.99</button>
+                <button class="order_button" id="Edamame" onclick="menu_click(this.id)">Edamame<br>$5.99</button>
+                <button class="order_button" id="Harcau Shrimp Dumplings" onclick="menu_click(this.id)">Harcau Shrimp Dumplings<br>$5.99</button>
+                <button class="order_button" id="Vegetable Tempura" onclick="menu_click(this.id)">Vegetable Tempura<br>$6.50</button>
+                <button class="order_button" id="Salt & Pepper Calamari" onclick="menu_click(this.id)">Salt & Pepper Calamari<br>$8.99</button>
             </div>
         </div>
 
@@ -84,31 +86,31 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for hibachi selection -->
-                <button class="order_button" id="Filet Mignon" onclick="menu_click(this.id)">Filet Mignon</button>
-                <button class="order_button" id="Steak" onclick="menu_click(this.id)">Steak</button>
-                <button class="order_button" id="Ribeye" onclick="menu_click(this.id)">Ribeye</button>
-                <button class="order_button" id="Chicken" onclick="menu_click(this.id)">Chicken</button>
-                <button class="order_button" id="Small Shrimp" onclick="menu_click(this.id)">Small Shrimp</button>
-                <button class="order_button" id="Jumbo Shrimp" onclick="menu_click(this.id)">Jumbo Shrimp</button>
-                <button class="order_button" id="Lobster" onclick="menu_click(this.id)">Lobster</button>
-                <button class="order_button" id="Vegetable Dinner" onclick="menu_click(this.id)">Vegetable Dinner</button>
-                <button class="order_button" id="Steak & Chicken" onclick="menu_click(this.id)">Steak & Chicken</button>
-                <button class="order_button" id="Steak & Jumbo Shrimp" onclick="menu_click(this.id)">Steak & Jumbo Shrimp</button>
-                <button class="order_button" id="Steak & Small Shrimp" onclick="menu_click(this.id)">Steak & Small Shrimp</button>
-                <button class="order_button" id="Steak & Lobster" onclick="menu_click(this.id)">Steak & Lobster</button>
-                <button class="order_button" id="Ribeye & Chicken" onclick="menu_click(this.id)">Ribeye & Chicken</button>
-                <button class="order_button" id="Ribeye & Small Shrimp" onclick="menu_click(this.id)">Ribeye & Small Shrimp</button>
-                <button class="order_button" id="Ribeye & Jumbo Shrimp" onclick="menu_click(this.id)">Ribeye & Jumbo Shrimp</button>
-                <button class="order_button" id="Ribeye & Lobster" onclick="menu_click(this.id)">Ribeye & Lobster</button>
-                <button class="order_button" id="Filet & Chicken" onclick="menu_click(this.id)">Filet & Chicken</button>
-                <button class="order_button" id="Filet & Small Shrimp" onclick="menu_click(this.id)">Filet & Small Shrimp</button>
-                <button class="order_button" id="Filet & Jumbo Shrimp" onclick="menu_click(this.id)">Filet & Jumbo Shrimp</button>
-                <button class="order_button" id="Filet & Lobster" onclick="menu_click(this.id)">Filet & Lobster</button>
-                <button class="order_button" id="Chicken & Jumbo Shrimp" onclick="menu_click(this.id)">Chicken & Jumbo Shrimp</button>
-                <button class="order_button" id="Chicken & Small Shrimp" onclick="menu_click(this.id)">Chicken & Small Shrimp</button>
-                <button class="order_button" id="Chicken & Lobster" onclick="menu_click(this.id)">Chicken & Lobster</button>
-                <button class="order_button" id="Lobster & Jumbo Shrimp" onclick="menu_click(this.id)">Lobster & Jumbo Shrimp</button>
-                <button class="order_button" id="Lobster & Small Shrimp" onclick="menu_click(this.id)">Lobster & Small Shrimp</button>
+                <button class="order_button" id="Filet Mignon" onclick="menu_click(this.id)">Filet Mignon<br>$18.99</button>
+                <button class="order_button" id="Steak" onclick="menu_click(this.id)">Steak<br>$14.99</button>
+                <button class="order_button" id="Ribeye" onclick="menu_click(this.id)">Ribeye<br>$16.50</button>
+                <button class="order_button" id="Chicken" onclick="menu_click(this.id)">Chicken<br>$12.99</button>
+                <button class="order_button" id="Small Shrimp" onclick="menu_click(this.id)">Small Shrimp<br>$12.99</button>
+                <button class="order_button" id="Jumbo Shrimp" onclick="menu_click(this.id)">Jumbo Shrimp<br>$16.50</button>
+                <button class="order_button" id="Lobster" onclick="menu_click(this.id)">Lobster<br>$18.50</button>
+                <button class="order_button" id="Vegetable Dinner" onclick="menu_click(this.id)">Vegetable Dinner<br>$11.50</button>
+                <button class="order_button" id="Steak & Chicken" onclick="menu_click(this.id)">Steak & Chicken<br>$15.50</button>
+                <button class="order_button" id="Steak & Jumbo Shrimp" onclick="menu_click(this.id)">Steak & Jumbo Shrimp<br>$17.50</button>
+                <button class="order_button" id="Steak & Small Shrimp" onclick="menu_click(this.id)">Steak & Small Shrimp<br>$16.99</button>
+                <button class="order_button" id="Steak & Lobster" onclick="menu_click(this.id)">Steak & Lobster<br>$19.99</button>
+                <button class="order_button" id="Ribeye & Chicken" onclick="menu_click(this.id)">Ribeye & Chicken<br>$17.50</button>
+                <button class="order_button" id="Ribeye & Small Shrimp" onclick="menu_click(this.id)">Ribeye & Small Shrimp<br>$17.99</button>
+                <button class="order_button" id="Ribeye & Jumbo Shrimp" onclick="menu_click(this.id)">Ribeye & Jumbo Shrimp<br>$18.99</button>
+                <button class="order_button" id="Ribeye & Lobster" onclick="menu_click(this.id)">Ribeye & Lobster<br>$20.99</button>
+                <button class="order_button" id="Filet & Chicken" onclick="menu_click(this.id)">Filet & Chicken<br>$21.99</button>
+                <button class="order_button" id="Filet & Small Shrimp" onclick="menu_click(this.id)">Filet & Small Shrimp<br>$21.99</button>
+                <button class="order_button" id="Filet & Jumbo Shrimp" onclick="menu_click(this.id)">Filet & Jumbo Shrimp<br>$22.99</button>
+                <button class="order_button" id="Filet & Lobster" onclick="menu_click(this.id)">Filet & Lobster<br>$24.99</button>
+                <button class="order_button" id="Chicken & Jumbo Shrimp" onclick="menu_click(this.id)">Chicken & Jumbo Shrimp<br>$18.50</button>
+                <button class="order_button" id="Chicken & Small Shrimp" onclick="menu_click(this.id)">Chicken & Small Shrimp<br>$17.50</button>
+                <button class="order_button" id="Chicken & Lobster" onclick="menu_click(this.id)">Chicken & Lobster<br>$18.99</button>
+                <button class="order_button" id="Lobster & Jumbo Shrimp" onclick="menu_click(this.id)">Lobster & Jumbo Shrimp<br>$22.00</button>
+                <button class="order_button" id="Lobster & Small Shrimp" onclick="menu_click(this.id)">Lobster & Small Shrimp<br>$21.50</button>
             </div>
         </div>
 
@@ -116,22 +118,22 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for noodle selection -->
-                <button class="order_button" id="Japanese Tempura Udon Bowl" onclick="menu_click(this.id)">Japanese Tempura Udon Bowl</button>
-                <button class="order_button" id="Seafood Udon Bowl" onclick="menu_click(this.id)">Seafood Udon Bowl</button>
-                <button class="order_button" id="Hong Kong Wonton Egg Noodle Bowl" onclick="menu_click(this.id)">Hong Kong Wonton Egg Noodle Bowl</button>
-                <button class="order_button" id="Vietnamese Beef Rice Noodle Broth(Pho)" onclick="menu_click(this.id)">Vietnamese Beef Rice Noodle Broth(Pho)</button>
-                <button class="order_button" id="Chicken Mushroom Soba Noodle Bowl" onclick="menu_click(this.id)">Chicken Mushroom Soba Noodle Bowl</button>
-                <button class="order_button" id="Seafood Curry Egg Noodle Bowl" onclick="menu_click(this.id)">Seafood Curry Egg Noodle Bowl </button>
-                <button class="order_button" id="Tum Yum Seafood Mei Fun Bowl" onclick="menu_click(this.id)">Tum Yum Seafood Mei Fun Bowl</button>
-                <button class="order_button" id="Miso Ginger Pork Ramen Bowl" onclick="menu_click(this.id)">Miso Ginger Pork Ramen Bowl</button>
-                <button class="order_button" id="Pad See Yew(Thai)" onclick="menu_click(this.id)">Pad See Yew(Thai)</button>
-                <button class="order_button" id="Hong Kong Chow Fun" onclick="menu_click(this.id)">Hong Kong Chow Fun</button>
-                <button class="order_button" id="Curry Chow Mei Fun" onclick="menu_click(this.id)">Curry Chow Mei Fun</button>
-                <button class="order_button" id="Chinese Lo Mein" onclick="menu_click(this.id)">Chinese Lo Mein</button>
-                <button class="order_button" id="Stir Fry Udon" onclick="menu_click(this.id)">Stir Fry Udon</button>
-                <button class="order_button" id="Double Pan Fried Egg Noodles" onclick="menu_click(this.id)">Double Pan Fried Egg Noodles</button>
-                <button class="order_button" id="Stir Fried Yaki Ramen" onclick="menu_click(this.id)">Stir Fried Yaki Ramen</button>
-                <button class="order_button" id="Buckwheat Yaki Soba" onclick="menu_click(this.id)">Buckwheat Yaki Soba</button>
+                <button class="order_button" id="Japanese Tempura Udon Bowl" onclick="menu_click(this.id)">Japanese Tempura Udon Bowl<br>$16.50</button>
+                <button class="order_button" id="Seafood Udon Bowl" onclick="menu_click(this.id)">Seafood Udon Bowl<br>$17.00</button>
+                <button class="order_button" id="Hong Kong Wonton Egg Noodle Bowl" onclick="menu_click(this.id)">Hong Kong Wonton Egg Noodle Bowl<br>$14.99</button>
+                <button class="order_button" id="Vietnamese Beef Rice Noodle Broth(Pho)" onclick="menu_click(this.id)">Vietnamese Beef Rice Noodle Broth(Pho)<br>$15.99</button>
+                <button class="order_button" id="Chicken Mushroom Soba Noodle Bowl" onclick="menu_click(this.id)">Chicken Mushroom Soba Noodle Bowl<br>$14.00</button>
+                <button class="order_button" id="Seafood Curry Egg Noodle Bowl" onclick="menu_click(this.id)">Seafood Curry Egg Noodle Bowl<br>$16.99</button>
+                <button class="order_button" id="Tum Yum Seafood Mei Fun Bowl" onclick="menu_click(this.id)">Tum Yum Seafood Mei Fun Bowl<br>$16.99</button>
+                <button class="order_button" id="Miso Ginger Pork Ramen Bowl" onclick="menu_click(this.id)">Miso Ginger Pork Ramen Bowl<br>$14.99</button>
+                <button class="order_button" id="Pad See Yew(Thai)" onclick="menu_click(this.id)">Pad See Yew(Thai)<br>$13.99</button>
+                <button class="order_button" id="Hong Kong Chow Fun" onclick="menu_click(this.id)">Hong Kong Chow Fun<br>$12.99</button>
+                <button class="order_button" id="Curry Chow Mei Fun" onclick="menu_click(this.id)">Curry Chow Mei Fun<br>$12.99</button>
+                <button class="order_button" id="Chinese Lo Mein" onclick="menu_click(this.id)">Chinese Lo Mein<br>$11.99</button>
+                <button class="order_button" id="Stir Fry Udon" onclick="menu_click(this.id)">Stir Fry Udon<br>$12.99</button>
+                <button class="order_button" id="Double Pan Fried Egg Noodles" onclick="menu_click(this.id)">Double Pan Fried Egg Noodles<br>$13.99</button>
+                <button class="order_button" id="Stir Fried Yaki Ramen" onclick="menu_click(this.id)">Stir Fried Yaki Ramen<br>$13.99</button>
+                <button class="order_button" id="Buckwheat Yaki Soba" onclick="menu_click(this.id)">Buckwheat Yaki Soba<br>$13.99</button>
             </div>
         </div>
 
@@ -139,22 +141,22 @@
         <div class="container">
             <div class="order_grid">
                 <!-- Buttons for sushi selection -->
-                <button class="order_button" id="California Roll" onclick="menu_click(this.id)">California Roll</button>
-                <button class="order_button" id="Philadelphia Roll" onclick="menu_click(this.id)">Philadelphia Roll</button>
-                <button class="order_button" id="Dragon Roll" onclick="menu_click(this.id)">Dragon Roll</button>
-                <button class="order_button" id="Rainbow Roll" onclick="menu_click(this.id)">Rainbow Roll</button>
-                <button class="order_button" id="American Dream Roll" onclick="menu_click(this.id)">American Dream Roll</button>
-                <button class="order_button" id="Crab Rangoon Roll" onclick="menu_click(this.id)">Crab Rangoon Roll</button>
-                <button class="order_button" id="Unagi Roll" onclick="menu_click(this.id)">Unagi Roll</button>
-                <button class="order_button" id="Tuna Roll" onclick="menu_click(this.id)">Tuna Roll</button>
-                <button class="order_button" id="Spicy Tuna Roll" onclick="menu_click(this.id)">Spicy Tuna Roll</button>
-                <button class="order_button" id="Salmon Roll" onclick="menu_click(this.id)">Salmon Roll</button>
-                <button class="order_button" id="Spicy Salmon Roll" onclick="menu_click(this.id)">Spicy Salmon Roll</button>
-                <button class="order_button" id="Spicy Shrimp Roll" onclick="menu_click(this.id)">Spicy Shrimp Roll</button>
-                <button class="order_button" id="Crispy California Roll" onclick="menu_click(this.id)">Crispy California Roll</button>
-                <button class="order_button" id="Trust Me Roll" onclick="menu_click(this.id)">Trust Me Roll</button>
-                <button class="order_button" id="White Tuna Roll" onclick="menu_click(this.id)">White Tuna Roll</button>
-                <button class="order_button" id="Spicy White Tuna Roll" onclick="menu_click(this.id)">Spicy White Tuna Roll</button>
+                <button class="order_button" id="California Roll" onclick="menu_click(this.id)">California Roll<br>$5.99</button>
+                <button class="order_button" id="Philadelphia Roll" onclick="menu_click(this.id)">Philadelphia Roll<br>$5.99</button>
+                <button class="order_button" id="Dragon Roll" onclick="menu_click(this.id)">Dragon Roll<br>$8.99</button>
+                <button class="order_button" id="Rainbow Roll" onclick="menu_click(this.id)">Rainbow Roll<br>$9.99</button>
+                <button class="order_button" id="American Dream Roll" onclick="menu_click(this.id)">American Dream Roll<br>$9.99</button>
+                <button class="order_button" id="Crab Rangoon Roll" onclick="menu_click(this.id)">Crab Rangoon Roll<br>$9.99</button>
+                <button class="order_button" id="Unagi Roll" onclick="menu_click(this.id)">Unagi Roll<br>$6.99</button>
+                <button class="order_button" id="Tuna Roll" onclick="menu_click(this.id)">Tuna Roll<br>$6.99</button>
+                <button class="order_button" id="Spicy Tuna Roll" onclick="menu_click(this.id)">Spicy Tuna Roll<br>$7.50</button>
+                <button class="order_button" id="Salmon Roll" onclick="menu_click(this.id)">Salmon Roll<br>$6.50</button>
+                <button class="order_button" id="Spicy Salmon Roll" onclick="menu_click(this.id)">Spicy Salmon Roll<br>$7.00</button>
+                <button class="order_button" id="Spicy Shrimp Roll" onclick="menu_click(this.id)">Spicy Shrimp Roll<br>$7.00</button>
+                <button class="order_button" id="Crispy California Roll" onclick="menu_click(this.id)">Crispy California Roll<br>$7.99</button>
+                <button class="order_button" id="Trust Me Roll" onclick="menu_click(this.id)">Trust Me Roll<br>$8.99</button>
+                <button class="order_button" id="White Tuna Roll" onclick="menu_click(this.id)">White Tuna Roll<br>$6.99</button>
+                <button class="order_button" id="Spicy White Tuna Roll" onclick="menu_click(this.id)">Spicy White Tuna Roll<br>$7.50</button>
             </div>
         </div>
 

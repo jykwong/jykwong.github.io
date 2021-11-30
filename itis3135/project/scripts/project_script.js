@@ -2,6 +2,7 @@
 var menu_click; //will be a function
 var reset_order; //will be a function
 var totalCost=0;
+var subTotal=0;
 var amt=0;
 var salesTax = .0475;
 var add_item;
@@ -84,8 +85,8 @@ $(document).ready(function() {
         {name: "Filet & Small Shrimp", price: 21.99},//25
         {name: "Filet & Jumbo Shrimp", price: 22.99},//26
         {name: "Filet & Lobster", price: 24.99},//27
-        {name: "Chicken & Jumbo Shrimp", price: 17.50},//28
-        {name: "Chicken & Small Shrimp", price: 18.50},//29
+        {name: "Chicken & Jumbo Shrimp", price: 18.50},//28
+        {name: "Chicken & Small Shrimp", price: 17.50},//29
         {name: "Chicken & Lobster", price: 18.99},//30
         {name: "Lobster & Jumbo Shrimp", price: 22.00},//31
         {name: "Lobster & Small Shrimp", price: 21.50},//32
@@ -134,15 +135,18 @@ $(document).ready(function() {
                 console.log(menuItems[i].name);//for testing-- menu item name to console
                 console.log(menuItems[i].price)//for testing-- menu item price to console
                 amt = menuItems[i].price; //save menu item price to variable
-                totalCost += amt; //adds amt variable to total cost
-                console.log("total: " + totalCost); //for testing-- show new total
+                subTotal += amt; //adds amt variable to total cost
+                console.log("total: " + subTotal); //for testing-- show new total
 
                 string += menuItems[i].name + "<br>";
             }
         }
-        totalCost = totalCost + (totalCost*salesTax);
+        totalCost = subTotal + (subTotal*salesTax);
         items_id.innerHTML = string;
-        cost_id.innerHTML = "$"+totalCost.toFixed(2);
+
+        cost_id.innerHTML = "Subtotal: $" + subTotal.toFixed(2) + "<br>";
+        cost_id.innerHTML += "Sales Tax: $" + (totalCost*salesTax).toFixed(2) + "<br>";
+        cost_id.innerHTML += "Total Cost: $"+totalCost.toFixed(2);
 
         
     }
