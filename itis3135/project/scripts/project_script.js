@@ -12,7 +12,7 @@ var cost_id;
 var string = ""
 
 $(document).ready(function() {
-    $("#slider1").bxSlider({
+    $("#slider1,#slider2,#slider3").bxSlider({
         mode: 'fade',
         auto: false,
         autoControls: true,
@@ -25,33 +25,6 @@ $(document).ready(function() {
         pagerType: 'short',
         captions: true,
     });
-    $("#slider2").bxSlider({
-        mode: 'fade',
-        auto: false,
-        autoControls: true,
-        captions: true,
-        slideWidth: 640,
-        slideMargin: 2,
-        randomStart: true,
-        adaptiveHeight: true,
-        pager: true,
-        pagerType: 'short',
-        captions: true,
-    });
-    $("#slider3").bxSlider({
-        mode: 'fade',
-        auto: false,
-        autoControls: true,
-        captions: true,
-        slideWidth: 640,
-        slideMargin: 2,
-        randomStart: true,
-        adaptiveHeight: true,
-        pager: true,
-        pagerType: 'short',
-        captions: true,
-    });
-
 
     //Script for Order Page
     items_id = document.getElementById("items");
