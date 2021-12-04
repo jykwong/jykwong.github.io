@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="styles/project_default.css" rel="stylesheet" type="text/css">
     <title>Chu's Noodles - About Us</title>
+    <link href="styles/project_default.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7x7g9nw4YguAzLopz23BI-7w6hJwwwNqM_JxnpXvrp3hCJFDUNjBCr1JK9E1qnRUnndD5nerSvH051-jcnnZr_GgxQeJaZa3is5rTneYLzU" charset="UTF-8"></script>
-    <script src="scripts/project_script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src="scripts/aboutus.js"></script>
 </head>
 
 <body>
@@ -27,25 +30,22 @@
     <main>
         <br>
         <h2>About Us</h2>
-        <div class="grid">
-            <div><!--inner div for about us paragraph-->
-                <p>
-                    Chu's Noodles creates the freshest meals inspired by the favorites of Asian cuisine. With the utmost attention to detail and care,
-                    we craft the finest meal you will ever experience in Charlotte. With our comfortable and classy environment and professional staff,
-                    we believe that Chu's Noodles will become one of your favorite spots to enjoy a great meal. We specialize in hibachi, sushi, noodles
-                    and other amazing specialty dishes. Don't forget to check out our drink menu!
-                </p>
+
+        <div id="accordion">
+            <h3>About us</h3>
+            <div><p>Chu's Noodles creates the freshest meals inspired by the favorites of Asian cuisine. With the utmost attention to detail and care,
+                we craft the finest meal you will ever experience in Charlotte. With our comfortable and classy environment and professional staff,
+                we believe that Chu's Noodles will become one of your favorite spots to enjoy a great meal. We specialize in hibachi, sushi, noodles
+                and other amazing specialty dishes. Don't forget to check out our drink menu!</p>
             </div>
-            <div><!--inner div for contact us-->
-                <p>
-                    Contact Us <br><br>
-                    Hours: [private]<br>
-                    Phone: [private] <br>
-                    Address: [private] <br>
-                    Social Media: [private]
-                </p>
+            <h3>Contact Us</h3>
+            <div><p>
+                Hours: [private]<br>
+                Phone: [private] <br>
+                Address: [private] <br>
+                Social Media: [private]</p>
             </div>
-        </div><!--class=grid closing tag-->
+        </div>
         
         
     </main>
