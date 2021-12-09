@@ -123,4 +123,3 @@ $(document).ready(function(){
 }); //end document ready
 
 
-//"json_files/menu_drinks.json, json_files/menu_appetizers.json, json_files/menu_hibachi.json, json_files/menu_sushi.json",
