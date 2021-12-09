@@ -15,18 +15,18 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         console.log("test 12345");
-                      /*  $("#about").append(
-                            "<img src='" + value.images[0].image + "'>"
+                        $("#about").append(
+                            "i am"
                         );//end each about
                         $("#menu").append(
-                            "<img src='" + value.images[1].image + "'>"
+                            "about to "
                         );//end each menu
                         $("#gallery").append(
-                            "<img src='" + value.images[2].image + "'>"
+                            "lose my"
                         );//end each gallery
                         $("#order").append(
-                            "<img src='" + value.images[3].image + "'>"
-                        );//end each order */
+                            "shit"
+                        );//end each order 
                     });//end each data function(key,value)
                 }); //end each(data,function())
             });// end getJSON
