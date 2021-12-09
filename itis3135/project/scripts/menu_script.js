@@ -12,7 +12,7 @@ $(document).ready(function(){
         dataType: "json",
         success: function(data) {
             console.log(data); //print data' to conso1e
-            console.log(data.noodle.name[1]);
+            console.log(data.noodles.name[1]);
             $("#appetizer,#noodles,#sushi,#drinks").html("");
             $.getJSON("json_files/menu.json", function(data) {
                 $.each(data, function() {
