@@ -15,7 +15,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#appetizer").append(
-                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: "+ value.price + "<br>"
+                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: $"+ value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
@@ -39,7 +39,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#noodles").append(
-                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: "+ value.price + "<br>"
+                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: $"+ value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
@@ -63,7 +63,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#sushi").append(
-                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: "+ value.price + "<br>"
+                            "<strong>" + value.name + "</strong>" + " :: " + value.description + " :: $"+ value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
@@ -87,7 +87,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#hibachi").append(
-                            "<strong>" + value.name + "</strong>" + " :: " + value.price + "<br>"
+                            "<strong>" + value.name + "</strong>" + " :: $" + value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
