@@ -9,12 +9,13 @@ $(document).ready(function(){
             alert("Error: " + xhr.status + " - " + error);},
         dataType: "json",
         success: function(data) {
-            console.log(data.images[0]); //print data' to conso1e
+            console.log("test 123"); //print data' to conso1e
             $("#about, #menu, #gallery, #order").html("");
             $.getJSON("json_files/index_img.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#about").append(
+                        console.log("test 12345");
+                      /*  $("#about").append(
                             "<img src='" + value.images[0].image + "'>"
                         );//end each about
                         $("#menu").append(
@@ -25,7 +26,7 @@ $(document).ready(function(){
                         );//end each gallery
                         $("#order").append(
                             "<img src='" + value.images[3].image + "'>"
-                        );//end each order
+                        );//end each order */
                     });//end each data function(key,value)
                 }); //end each(data,function())
             });// end getJSON
