@@ -87,7 +87,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#hibachi").append(
-                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
+                            value.name + " :: "+ value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
