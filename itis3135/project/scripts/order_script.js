@@ -101,7 +101,7 @@ $(document).ready(function() {
                 subTotal += amt; //adds amt variable to total cost
                 console.log("total: " + subTotal); //for testing-- show new total
 
-                string += menuItems[i].name + ": $" + menuItems[i].price + "<br>";
+                string += menuItems[i].name + "... $" + menuItems[i].price + "<br>";
             }
         }
         totalCost = subTotal + (subTotal*salesTax);

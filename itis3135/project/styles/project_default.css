@@ -115,13 +115,12 @@ header, footer {
 	box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.2);
 	margin-left:auto;
 	margin-right: auto;
-	margin-top: 1em;
-    margin-bottom: 1em;
 	max-width: 40em;
 	overflow:hidden;
 }
 .order_grid {
     display: grid;
+    border-radius: 15px;
     background-color: hsla(0, 0%, 83%, 0.452);
     grid-template-columns:50% 50%;
     grid-auto-columns: minmax(100px, auto);
@@ -129,6 +128,8 @@ header, footer {
     grid-gap: .5em;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .order_grid > div {
