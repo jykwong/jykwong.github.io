@@ -16,6 +16,7 @@ $(document).ready(function(){
                 $.each(data, function(index, value) {
                     imgArr.push(value);
                 });
+                console.log("we got this far..");
                 $("#about").append(
                     "<img src='" + imgArr[0].image + "'>"
                 );
