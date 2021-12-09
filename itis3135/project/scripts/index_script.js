@@ -12,23 +12,14 @@ $(document).ready(function(){
             console.log(data); //print data' to conso1e
             $("#about, #menu, #gallery, #order").html("");
             $.getJSON("json_files/index_img.json", function(data) {
-                var imgArr =[];
-                $.each(data, function(index, value) {
-                    imgArr.push(value);
-                });
-                console.log("we got this far..");
-                $("#about").append(
-                    "<img src='" + imgArr[0].image + "'>"
-                );
-                $("#menu").append(
-                    "<img src='" + imgArr[1].image + "'>"
-                );
-                $("#gallery").append(
-                    "<img src='" + imgArr[2].image + "'>"
-                );
-                $("#order").append(
-                    "<img src='" + imgArr[3].image + "'>"
-                );
+                $.each(data, function() {
+                    $.each(this, function(key, value) {
+                        $("#about").append(
+                            "<img src='" + value.image[key] + "'>"
+                        );//end each appetizer
+                        
+                    });//end each data function(key,value)
+                }); //end each(data,function())
             });// end getJSON
         }//end success function
     }); //end ajax method for appetizer
