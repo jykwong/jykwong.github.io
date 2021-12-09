@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $.ajax({
         type: "get",
-        url: "json_files/menu_drinks.json, json_files/menu_appetizers.josn, json_files/menu_hibachi.json, json_files/menu_sushi.json",
+        url: "json_files/menu_drinks.json, json_files/menu_appetizers.json, json_files/menu_hibachi.json, json_files/menu_sushi.json",
         beforeSend: function() {
             $("#appetizer,#noodles,#sushi,#drinks").html("Loading...");
         },
@@ -61,3 +61,6 @@ $(document).ready(function(){
         }//end success function
     }); //end ajax method
 }); //end document ready
+
+
+//"json_files/menu_drinks.json, json_files/menu_appetizers.josn, json_files/menu_hibachi.json, json_files/menu_sushi.json",
