@@ -101,7 +101,7 @@ $(document).ready(function() {
                 subTotal += amt; //adds amt variable to total cost
                 console.log("total: " + subTotal); //for testing-- show new total
 
-                string += menuItems[i].name + "<br>";
+                string += menuItems[i].name + ": $" + menuItems[i].price + "<br>";
             }
         }
         totalCost = subTotal + (subTotal*salesTax);
@@ -126,8 +126,3 @@ $(document).ready(function() {
 });// end onload
 
 
-// NOTES //
-/*  console.log(menuItems[3].price) outputs 5.99 from Crab Rangoon(index 3) <-- this could work
-    totalCost += parseFloat(menuItem[i].price).toFixed(2) maybe not needed but if I do, here it is.
-    function variables need to be declared global or else button wont call the function
-*/

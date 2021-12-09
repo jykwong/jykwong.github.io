@@ -111,7 +111,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#drinks").append(
-                            "<strong>" + value.name + "</strong>" + "<br>"
+                            "<strong>" + value.name + "</strong>" + " :: $" + value.price + "<br>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())

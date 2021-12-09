@@ -1,12 +1,12 @@
 {"menu":[
-    {"name": "Sweet/Unsweet Tea"},
-    {"name": "Soda"},
-    {"name": "Water"},
-    {"name": "Hot Sake"},
-    {"name": "Domestic Beer"},
-    {"name": "Imported Beer"},
-    {"name": "Red Wine"},
-    {"name": "White Wine"},
-    {"name": "Cocktails"},
-    {"name": "Martini"}
+    {"name": "Sweet/Unsweet Tea", "price": "1.99"},
+    {"name": "Soda", "price": "1.99"},
+    {"name": "Water", "price": "0.00"},
+    {"name": "Hot Sake", "price": "6.99"},
+    {"name": "Domestic Beer", "price": "3.50"},
+    {"name": "Imported Beer", "price": "3.99"},
+    {"name": "Red Wine", "price": "3.99"},
+    {"name": "White Wine", "price": "3.99"},
+    {"name": "Cocktails", "price": "4.50"},
+    {"name": "Martini", "price": "4.50"}
 ]}
