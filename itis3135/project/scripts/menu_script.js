@@ -18,9 +18,9 @@ $(document).ready(function(){
                     $.each(this, function(key, value) {
                         $("#appetizer").append(
                             value.appetizer.name + " :: " + value.appetizer.price
-                        );
-                    });
-                });
+                        );//end each appetizer
+                    });//end each data function
+                });//end getJSON
             });
         }//end success function
     }); //end ajax method
