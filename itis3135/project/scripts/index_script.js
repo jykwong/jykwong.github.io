@@ -15,9 +15,9 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $(".image_grid").append(
-                            "<div class=\"image_container\">" +
-                            "<a href=" + value.link +
-                                "<img src=" + value.image + " alt=" +"\"" + value.alt + "\"> </a>" +
+                            "<div class='image_container'>" +
+                            "<a href='" + value.link + "'" +
+                                "<img src=" + value.image + " alt='" + value.alt + "'>" + "</a>" +
                             "</div>"
                         );//end each appetizer
                     });//end each data function(key,value)
