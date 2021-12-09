@@ -15,10 +15,10 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $(#about).append(
-                            "<a href=\"about.html\"><img src=" + value.images[0] +" alt=\"about\" ></a>"
+                            "<a href=\"about.html\"><img src=" + value.images +" alt=\"about\" ></a>"
                         );
                         $(#menu).append(
-                            "<a href=\"menu.html\"><img src=" + value.images[1] +" alt=\"menu\" ></a>"
+                            "<a href=\"menu.html\"><img src=" + value.images +" alt=\"menu\" ></a>"
                         );
                         $(#gallery).append(
                             "<a href=\"gallery.html\"><img src=" + value.images[2] +" alt=\"gallery\" ></a>"
