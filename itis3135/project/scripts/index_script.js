@@ -12,18 +12,22 @@ $(document).ready(function(){
             console.log(data); //print data' to conso1e
             $("#about, #menu, #gallery, #order").html("");
             $.getJSON("json_files/index_img.json", function(data) {
-                $(#about).append(
-                    "<a href=\"about.html\"><img src=" + data.images[0] +" alt=\"about\" ></a>"
-                );
-                $(#menu).append(
-                    "<a href=\"menu.html\"><img src=" + data.images[1] +" alt=\"menu\" ></a>"
-                );
-                $(#gallery).append(
-                    "<a href=\"gallery.html\"><img src=" + data.images[2] +" alt=\"gallery\" ></a>"
-                );
-                $(#order).append(
-                    "<a href=\"order.html\"><img src=" + data.images[3] +" alt=\"order\" ></a>"
-                );
+                $.each(data, function() {
+                    $.each(this, function(key, value) {
+                        $(#about).append(
+                            "<a href=\"about.html\"><img src=" + value.images[0] +" alt=\"about\" ></a>"
+                        );
+                        $(#menu).append(
+                            "<a href=\"menu.html\"><img src=" + value.images[1] +" alt=\"menu\" ></a>"
+                        );
+                        $(#gallery).append(
+                            "<a href=\"gallery.html\"><img src=" + value.images[2] +" alt=\"gallery\" ></a>"
+                        );
+                        $(#order).append(
+                            "<a href=\"order.html\"><img src=" + value.images[3] +" alt=\"order\" ></a>"
+                        );
+                    });//end each data function(key,value)
+                }); //end each(data,function())
             });// end getJSON
         }//end success function
     }); //end ajax method for appetizer
