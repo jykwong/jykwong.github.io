@@ -17,16 +17,16 @@ $(document).ready(function(){
                     imgArr.push(value);
                 });
                 $("#about").append(
-                    "<img src='" + imgArr[0] + "'>"
+                    "<img src='" + imgArr[0].image + "'>"
                 );
                 $("#menu").append(
-                    "<img src='" + imgArr[1] + "'>"
+                    "<img src='" + imgArr[1].image + "'>"
                 );
                 $("#gallery").append(
-                    "<img src='" + imgArr[2] + "'>"
+                    "<img src='" + imgArr[2].image + "'>"
                 );
                 $("#order").append(
-                    "<img src='" + imgArr[3] + "'>"
+                    "<img src='" + imgArr[3].image + "'>"
                 );
             });// end getJSON
         }//end success function
