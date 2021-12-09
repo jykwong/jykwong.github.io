@@ -10,12 +10,15 @@ $(document).ready(function(){
         dataType: "json",
         success: function(data) {
             console.log(data); //print data' to conso1e
-            $("#about").html("");
+            $("#about, #gallery, #order, #menu").html("");
             $.getJSON("json_files/index_img.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#about").append(
-                            "<p>" + value.alt + "test" +"</p>"
+                        $(".image_grid").append(
+                            "<div class=\"image_container\">" +
+                            "<a href=" + value.link +
+                                "<img src=" + value.image + " alt=" +"\"" + value.alt + "\"> </a>" +
+                            "</div>"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
