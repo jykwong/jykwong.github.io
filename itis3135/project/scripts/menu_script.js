@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $.ajax({
         type: "get",
-        url: "json_files/menu.json",
+        url: "json_files/menu_drinks.json, json_files/menu_appetizers.josn, json_files/menu_hibachi.json, json_files/menu_sushi.json",
         beforeSend: function() {
             $("#appetizer,#noodles,#sushi,#drinks").html("Loading...");
         },
@@ -12,27 +12,52 @@ $(document).ready(function(){
         dataType: "json",
         success: function(data) {
             console.log(data); //print data' to conso1e
-            console.log(data.noodles.name[1]);
             $("#appetizer,#noodles,#sushi,#drinks").html("");
-            $.getJSON("json_files/menu.json", function(data) {
+            $.getJSON("json_files/menu_appetizers.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#appetizer").append(
-                            value.appetizer.name + " :: " + value.appetizer.price +"<br>"
+                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
                         );//end each appetizer
                     });//end each data function
+                });//end getJSON
+            });
+            $.getJSON("json_files/menu_noodles.json", function(data) {
+                $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#noodles").append(
-                            value.noodles.name + " :: " + value.noodles.price + "<br>"
-                        )
-                    });
+                        $("#appetizer").append(
+                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
+                        );//end each appetizer
+                    });//end each data function
+                });//end getJSON
+            });
+            $.getJSON("json_files/menu_hibachi.json", function(data) {
+                $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#hibachi").append(
-                            value.hibachi.name + " :: " + value.hibachi.price + "<br>"
-                        )
-                    })
+                        $("#appetizer").append(
+                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
+                        );//end each appetizer
+                    });//end each data function
+                });//end getJSON
+            });
+            $.getJSON("json_files/menu_drinks.json", function(data) {
+                $.each(data, function() {
+                    $.each(this, function(key, value) {
+                        $("#appetizer").append(
+                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
+                        );//end each appetizer
+                    });//end each data function
+                });//end getJSON
+            });
+            $.getJSON("json_files/menu_sushi.json", function(data) {
+                $.each(data, function() {
+                    $.each(this, function(key, value) {
+                        $("#appetizer").append(
+                            value.name + " :: " + value.description + " :: "+ value.price + "<br>"
+                        );//end each appetizer
+                    });//end each data function
                 });//end getJSON
             });
         }//end success function
     }); //end ajax method
-});
+}); //end document ready
