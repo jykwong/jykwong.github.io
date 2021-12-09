@@ -17,7 +17,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#appetizer").append(
-                            value.appetizer.name + " :: " + value.appetizer.price
+                            value.appetizer.name + " :: " + value.appetizer.price +"<br>"
                         );//end each appetizer
                     });//end each data function
                 });//end getJSON
