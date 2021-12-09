@@ -71,5 +71,17 @@
         {"name": "Trust Me Roll", "price": 8.99, "description": "Deep-fried maki roll with tuna, salmon, white tuna, avocado and cream cheese. Spicy mayo, eel sauce, wasabi mayo on top"},
         {"name": "White Tuna Roll", "price": 6.99, "description": "Maki roll with white tuna and avocado"},
         {"name": "Spicy White Tuna Roll", "price": 7.50, "description": "Maki roll with white tuna, cucumber, avocado and spicy mayo on top."}
+    ],
+    "drinks": [
+        {"name": "Sweet/Unsweet Tea"},
+        {"name": "Soda"},
+        {"name": "Water"},
+        {"name": "Hot Sake"},
+        {"name": "Domestic Beer"},
+        {"name": "Imported Beer"},
+        {"name": "Red Wine"},
+        {"name": "White Wine"},
+        {"name": "Cocktails"},
+        {"name": "Martini"}
     ]
 }}
