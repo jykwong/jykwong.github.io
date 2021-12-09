@@ -82,7 +82,7 @@ $(document).ready(function(){
         dataType: "json",
         success: function(data) {
             console.log(data); //print data' to conso1e
-            $("#sushi").html("Hibachi meal comes with two complimentary Jumbo Shrimp, zucchini and onion. Shrimp sauce included. <br> ");
+            $("#hibachi").html("Hibachi meal comes with two complimentary Jumbo Shrimp, zucchini and onion. Shrimp sauce included. <br> ");
             $.getJSON("json_files/menu_hibachi.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
