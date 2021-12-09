@@ -14,7 +14,7 @@ $(document).ready(function(){
             $.getJSON("json_files/index_img.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
-                        $("#image_grid").append(
+                        $(".image_grid").append(
                             "<div class='image_container'>" +
                             "<a href=" + value.link + ">" +
                                 "<img src=" + value.image + " alt='" + value.alt + "'>" + "</a>" +
