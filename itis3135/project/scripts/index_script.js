@@ -3,30 +3,20 @@ $(document).ready(function(){
         type: "get",
         url: "json_files/index_img.json",
         beforeSend: function() {
-            $("#about, #menu, #gallery, #order").html("Loading...");},
+            $("#about").html("Loading...");},
         timeout: 10000,
         error: function(xhr, status, error) {
             alert("Error: " + xhr.status + " - " + error);},
         dataType: "json",
         success: function(data) {
-            console.log("test 123"); //print data' to conso1e
-            $("#about, #menu, #gallery, #order").html("");
+            console.log(data); //print data' to conso1e
+            $("#about").html("");
             $.getJSON("json_files/index_img.json", function(data) {
                 $.each(data, function() {
                     $.each(this, function(key, value) {
-                        console.log("test 12345");
                         $("#about").append(
-                            "i am"
-                        );//end each about
-                        $("#menu").append(
-                            "about to "
-                        );//end each menu
-                        $("#gallery").append(
-                            "lose my"
-                        );//end each gallery
-                        $("#order").append(
-                            "shit"
-                        );//end each order 
+                            "<img src=" + value.image + ">"
+                        );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
             });// end getJSON
