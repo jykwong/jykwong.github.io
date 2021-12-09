@@ -1,6 +1,6 @@
 {"images":[
-    {"image": "images/index-aboutus.png"},
-    {"image": "images/index-menu.png"},
-    {"image": "images/index-gallery.png"},
-    {"image": "images/index-order.png"}
+    {"image": "images/index-aboutus.png", "alt": "about us"},
+    {"image": "images/index-menu.png", "alt": "menu"},
+    {"image": "images/index-gallery.png", "alt": "gallery"},
+    {"image": "images/index-order.png", "alt": "order"}
 ]}

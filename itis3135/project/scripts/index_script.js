@@ -15,7 +15,7 @@ $(document).ready(function(){
                 $.each(data, function() {
                     $.each(this, function(key, value) {
                         $("#about").append(
-                            "<img src=" + value.image + ">"
+                            value.alt + "test"
                         );//end each appetizer
                     });//end each data function(key,value)
                 }); //end each(data,function())
