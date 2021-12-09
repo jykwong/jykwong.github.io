@@ -12,22 +12,22 @@ $(document).ready(function(){
             console.log(data); //print data' to conso1e
             $("#about, #menu, #gallery, #order").html("");
             $.getJSON("json_files/index_img.json", function(data) {
-                $.each(data, function() {
-                    $.each(this, function(key, value) {
-                        $(#about).append(
-                            "<a href=\"about.html\"><img src=" + value.image[0] +" alt=\"about\" ></a>"
-                        );
-                        $(#menu).append(
-                            "<a href=\"menu.html\"><img src=" + value.image[1] +" alt=\"menu\" ></a>"
-                        );
-                        $(#gallery).append(
-                            "<a href=\"gallery.html\"><img src=" + value.image[2] +" alt=\"gallery\" ></a>"
-                        );
-                        $(#order).append(
-                            "<a href=\"order.html\"><img src=" + value.image[3] +" alt=\"order\" ></a>"
-                        );
-                    });//end each data function(key,value)
-                }); //end each(data,function())
+                var imgArr =[];
+                $.each(data, function(index, value) {
+                    imgArr.push(value);
+                });
+                $("#about").append(
+                    "<img src='" + imgArr[0] + "'>"
+                );
+                $("#menu").append(
+                    "<img src='" + imgArr[1] + "'>"
+                );
+                $("#gallery").append(
+                    "<img src='" + imgArr[2] + "'>"
+                );
+                $("#order").append(
+                    "<img src='" + imgArr[3] + "'>"
+                );
             });// end getJSON
         }//end success function
     }); //end ajax method for appetizer
