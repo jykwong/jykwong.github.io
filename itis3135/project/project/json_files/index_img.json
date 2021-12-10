@@ -1,0 +1,6 @@
+{"images":[
+    {"link": "about.html", "image": "images/index-aboutus.png", "alt": "about us"},
+    {"link": "menu.html", "image": "images/index-menu.png", "alt": "menu"},
+    {"link": "gallery.html", "image": "images/index-gallery.png", "alt": "gallery"},
+    {"link": "order.html", "image": "images/index-order.png", "alt": "order"}
+]}

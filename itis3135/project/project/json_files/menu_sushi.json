@@ -1,0 +1,18 @@
+{"menu":[
+    {"name": "California Roll", "price": 5.99, "description": "Maki roll with crab meat, avocado and cucumber"},
+    {"name": "Philadelphia Roll", "price": 5.99, "description": "Maki roll with smoked salmon, avocado and cream cheese"},
+    {"name": "Dragon Roll", "price": 8.99, "description": "Maki roll with fried shrimp tempura and unagi on top with eel sauce"},
+    {"name": "Rainbow Roll", "price": 9.99, "description": "California roll with tuna, salmon, yellowtail and white tuna on top"},
+    {"name": "American Dream Roll", "price": 8.99, "description":"Tuna, salmon, yellowtail, avocado and cream cheese. Served with spicy mayo, eel sauce and wasabi mayo"},
+    {"name": "Crab Rangoon Roll", "price": 9.99, "description": "Maki roll with creamy crab rangoon filling. Served w/ spicy mayo, eel sauce, wasabi mayo and tempura flake and crab stick on top."},
+    {"name": "Unagi Roll", "price": 6.99, "description": "Maki roll with eel, cucumber, avocado and eel sauce on top"},
+    {"name": "Tuna Roll", "price": 6.99, "description": "Maki roll with tuna and avocado"},
+    {"name": "Spicy Tuna Roll", "price": 7.50, "description": "Maki roll with tuna, cucumber, avocado and spicy mayo on top"},
+    {"name": "Salmon Roll", "price": 6.50, "description": "Maki roll with salmon and avocado"},
+    {"name": "Spicy Salmon Roll", "price": 7.00, "description": "Maki roll with salmon, cucumber, avocado and spicy mayo on top"},
+    {"name": "Spicy Shrimp Roll", "price": 7.00, "description": "Maki roll with boiled shrimp, cucumber, avocado and spicy mayo on top"},
+    {"name": "Crispy California Roll", "price": 7.99, "description": "Deep-fried california roll in tempura batter"},
+    {"name": "Trust Me Roll", "price": 8.99, "description": "Deep-fried maki roll with tuna, salmon, white tuna, avocado and cream cheese. Spicy mayo, eel sauce, wasabi mayo on top"},
+    {"name": "White Tuna Roll", "price": 6.99, "description": "Maki roll with white tuna and avocado"},
+    {"name": "Spicy White Tuna Roll", "price": 7.50, "description": "Maki roll with white tuna, cucumber, avocado and spicy mayo on top."}
+]}
