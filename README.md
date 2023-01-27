@@ -1,3 +1,3 @@
 # jykwong.github.io
 
-just trying things out
+itis3135 projects
